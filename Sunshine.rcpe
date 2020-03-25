@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<MicomToolCommonProjectFile Version="1.00">
+  <CreatorType Name="CubeSuite+" Version="V4.00.00  [15 Mar 2016]" />
+  <Placeholders>
+    <PlaceholderPrefix>%</PlaceholderPrefix>
+    <PlaceholderPostfix>%</PlaceholderPostfix>
+  </Placeholders>
+  <Project Name="Sunshine" Type="Application">
+    <Files>
+      <Category Name="renesas">
+        <Path>dbsct.c</Path>
+        <Path>resetprg.c</Path>
+        <Path>sbrk.c</Path>
+        <Path>vecttbl.c</Path>
+        <Path>sbrk.h</Path>
+        <Path>stacksct.h</Path>
+        <Path>vect.h</Path>
+        <Path>intprg.c</Path>
+        <Path>typedefine.h</Path>
+        <Path>iodefine.h</Path>
+        <Path>lowsrc.h</Path>
+        <Path>lowsrc.c</Path>
+        <Path>lowlvl.src</Path>
+      </Category>
+      <Path>Sunshine.c</Path>
+      <Path>hal.c</Path>
+      <Path>hal.h</Path>
+    </Files>
+    <Device Series="RX">R5F56218BxFP</Device>
+    <BuildOptions Name="CC-RX" Version="V2.05.00">
+      <BuildMode Name="DefaultBuild" Active="True">
+        <GeneralOptions>
+          <SimultaneouslyBuild>true</SimultaneouslyBuild>
+        </GeneralOptions>
+        <CompileOptions>
+          <Option>-cpu=rx600</Option>
+          <Option>-lang=c</Option>
+          <Option>-include=.</Option>
+          <Option>-include=%ProjectDir%</Option>
+          <Option>-output=obj</Option>
+          <Option>-debug</Option>
+          <Option>-nologo</Option>
+        </CompileOptions>
+        <AssembleOptions>
+          <Option>-cpu=rx600</Option>
+          <Option>-output=%BuildModeName%\%FileLeaf%.obj</Option>
+          <Option>-nologo</Option>
+        </AssembleOptions>
+        <LinkOptions>
+          <Option>-output=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-list=%BuildModeName%\%ProjectName%.map</Option>
+          <Option>-nooptimize</Option>
+          <Option>-start=B_1,R_1,B_2,R_2,B,R,SU,SI/00000004,PResetPRG/FFF80000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/FFF80100,FIXEDVECT/0FFFFFFD0</Option>
+          <Option>-rom=D=R,D_1=R_1,D_2=R_2</Option>
+          <Option>-nologo</Option>
+          <Option>-end</Option>
+          <Option>-input=%BuildModeName%\%ProjectName%.abs</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.mot</Option>
+          <Option>-form=stype</Option>
+          <Option>-exit</Option>
+          <PreLinker>Auto</PreLinker>
+        </LinkOptions>
+        <LibraryGenerateOptions>
+          <Option>-cpu=rx600</Option>
+          <Option>-head=runtime,ctype,math,mathf,stdio,stdlib,string,new,cppstring</Option>
+          <Option>-output=%BuildModeName%\%ProjectName%.lib</Option>
+          <Option>-nologo</Option>
+          <GenerateMode>BuildOptionChanged</GenerateMode>
+        </LibraryGenerateOptions>
+        <LinkOrder>
+          <Path>DefaultBuild\dbsct.obj</Path>
+          <Path>DefaultBuild\intprg.obj</Path>
+          <Path>DefaultBuild\resetprg.obj</Path>
+          <Path>DefaultBuild\sbrk.obj</Path>
+          <Path>DefaultBuild\Sunshine.obj</Path>
+          <Path>DefaultBuild\vecttbl.obj</Path>
+          <Path>DefaultBuild\hal.obj</Path>
+          <Path>DefaultBuild\lowsrc.obj</Path>
+          <Path>DefaultBuild\lowlvl.obj</Path>
+        </LinkOrder>
+        <CommonOptions>
+          <IncludePathForC>.</IncludePathForC>
+          <IncludePathForC>%ProjectDir%</IncludePathForC>
+        </CommonOptions>
+      </BuildMode>
+    </BuildOptions>
+  </Project>
+</MicomToolCommonProjectFile>
