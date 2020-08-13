@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshine: hal.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">hal.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="hal_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// *************************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//   ロボット名 ： 電研ベーシックDCマウス、サンシャイン</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//   概要       ： サンシャインのメインファイル</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//   注意       ： なし</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//   メモ       ： なし</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//   引数       ： なし</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//   返り値     ： なし</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">// **************************    履    歴    *******************************</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//      v1.0        2013.10.31          外川            新規（ファイルのインクルード）</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// *************************************************************************/</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">// 多重コンパイル抑止</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef _HAL_H</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define _HAL_H</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// インクルードファイル（include）</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="typedefine_8h.html">typedefine.h</a>&gt;</span>                     <span class="comment">// 定義</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="iodefine_8h.html">iodefine.h</a>&gt;</span>                       <span class="comment">// I/O</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// 定義（define）</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/* LED */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define     LED_SYS         ( PORT3.DR.BIT.B2 )         // ビットアクセス</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="hal_8h.html#acb73b4a23aa82c68dd47fc38f80c6e63">   27</a></span>&#160;<span class="preprocessor">#define     LED8            ( PORTD.DR.BYTE )           // バイトアクセス</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="hal_8h.html#a828bed975a6f3a24231309200b24cf23">   28</a></span>&#160;<span class="preprocessor">#define     LED8_ALL_OFF    ( 0x00 )                    // 全消灯</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="hal_8h.html#ab245600beef06916bb4d3bb18f6c4d68">   29</a></span>&#160;<span class="preprocessor">#define     LED8_ALL_ON     ( 0xff )                    // 全点灯</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="hal_8h.html#ae308f3b0841a155922b91f4a24bbcd71">   30</a></span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">/* スイッチ */</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#define     SW_INC_PIN      (PORTC.PORT.BIT.B6)         // モード切り替え</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="hal_8h.html#aa2a2674604bcd97d77911de92e2a1834">   33</a></span>&#160;<span class="preprocessor">#define     SW_EXE_PIN      (PORTC.PORT.BIT.B7)         // モード実行</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="hal_8h.html#abfdd27022aa8c85cdcfc498bc69864f9">   34</a></span>&#160;<span class="preprocessor">#define     SW_ON           (OFF)                       // Pull-Upのため、ON-OFFが論理反転さている</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="hal_8h.html#a19d9e3aced311179a2914e0c9b13d0f9">   35</a></span>&#160;<span class="preprocessor">#define     SW_OFF          (ON)                        // Pull-Upのため、ON-OFFが論理反転さている</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="hal_8h.html#acd8900c9ec0efde1da3253b718574067">   36</a></span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">/* 電圧監視 */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#define     LED_BAT0        ( PORT5.DR.BIT.B1 )         // ビットアクセス</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="hal_8h.html#a539e266c323acc28fc6ef89f1acbd390">   39</a></span>&#160;<span class="preprocessor">#define     LED_BAT1        ( PORT5.DR.BIT.B2 )         // ビットアクセス</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="hal_8h.html#a1295835892ab3dd6e4d09c061f655c9c">   40</a></span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">/* 距離センサ */</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#define     LED_DIST_RF     ( PORTE.DR.BIT.B0 )         // ビットアクセス</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="hal_8h.html#a0d9b89d2fb1ab5c153057adce43098a0">   43</a></span>&#160;<span class="preprocessor">#define     LED_DIST_RS     ( PORTE.DR.BIT.B1 )         // ビットアクセス</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="hal_8h.html#aa0814715088d47391f95399965485daf">   44</a></span>&#160;<span class="preprocessor">#define     LED_DIST_LF     ( PORTE.DR.BIT.B2 )         // ビットアクセス</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="hal_8h.html#a722077d8e8e3dd886449517c187a5921">   45</a></span>&#160;<span class="preprocessor">#define     LED_DIST_LS     ( PORTE.DR.BIT.B3 )         // ビットアクセス</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="hal_8h.html#aa595aa798ce3c805797e1ee10fbf3e6c">   46</a></span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/* エンコーダ */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#define     ENC_R_TCNT          (MTU7.TCNT)     // 右エンコーダパルス数</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="hal_8h.html#aabb2a00a8eee345feb46fc7842598b0f">   49</a></span>&#160;<span class="preprocessor">#define     ENC_L_TCNT          (MTU8.TCNT)     // 左エンコーダパルス数</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="hal_8h.html#a5efddc8727910e22d349281084ad054e">   50</a></span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">// 列挙体（enum）</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">/* 距離センサID  */</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">   56</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aa6df6687045990b61b3a461e8b49130a">   57</a></span>&#160;    <a class="code" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aa6df6687045990b61b3a461e8b49130a">DIST_SEN_R_FRONT</a> = 0,       <span class="comment">// 右前</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a8725234ccfc6d559ea545a90a9b794c6">   58</a></span>&#160;    <a class="code" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a8725234ccfc6d559ea545a90a9b794c6">DIST_SEN_L_FRONT</a>,           <span class="comment">// 左前</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aedb2046cb9ab54ebbfc913b01581e306">   59</a></span>&#160;    <a class="code" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aedb2046cb9ab54ebbfc913b01581e306">DIST_SEN_R_SIDE</a>,            <span class="comment">// 右横</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a1240f8bef310dd9d4ba44b74dde593b2">   60</a></span>&#160;    <a class="code" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a1240f8bef310dd9d4ba44b74dde593b2">DIST_SEN_L_SIDE</a>,            <span class="comment">// 左横</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a7ea1d35735130661faec3e019fba5d1c">DIST_SEN_NUM</a></div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a7ea1d35735130661faec3e019fba5d1c">   62</a></span>&#160;}<a class="code" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">enDIST_SEN_ID</a>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">/* モータID */</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">   65</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span>{</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedeac3e5309c9c0765223d660fe19aeb3fb0">   66</a></span>&#160;    <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedeac3e5309c9c0765223d660fe19aeb3fb0">DCM_R</a> = 0,                  <span class="comment">// 右モータ</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea1941a5855b67f8e1b2a9d3b7e4dc30bc">   67</a></span>&#160;    <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea1941a5855b67f8e1b2a9d3b7e4dc30bc">DCM_L</a>,                      <span class="comment">// 左モータ</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea817f43ce8b16038c3479513fd44d9712">DCM_MAX</a></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea817f43ce8b16038c3479513fd44d9712">   69</a></span>&#160;}<a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// 構造体（struct）</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">// グローバル変数</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">// プロトタイプ宣言（ファイル内で必要なものだけ記述）</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">//**************************************************</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">/* 共通 */</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#aa43e8df89dc000f5f79cd3febef11b09">HAL_init</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="comment">/* シリアル通信 */</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a7c0afb452b679fea51dd70d8e9fb4afb">SCI_putch</a>(<span class="keywordtype">char</span> data);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a9039797d94a67dd817a713b1034310c1">SCI_puts</a>(<span class="keywordtype">char</span> *buffer);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a14f97f6843f7c0bf56eda88508f583a9">SCI_putsL</a>(<span class="keywordtype">char</span> *buffer, <span class="keywordtype">int</span> len);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a0e38c27681091bcd0e70dc8cd463111b">charput</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> data);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">int</span> <a class="code" href="hal_8h.html#a50c1a2214702c5c67ed4597b5085ccbd">SCI_chkRecv</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">char</span> <a class="code" href="hal_8h.html#a7d34d773d3056c82bcd43ba248267fab">SCI_getch</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="hal_8h.html#ab2d9d895a735831a254ea1a18590fbe5">SCI_getch_uc</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">int</span> <a class="code" href="hal_8h.html#adf0624f4b278345ffafa749b7950be59">SCI_gets</a>(<span class="keywordtype">char</span> *buffer);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="hal_8h.html#a1fd4ffe2430f6fa07446cfb8ec7fc0a9">charget</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">/* 電圧監視 */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#ace0bb9cfe126b49cbd303562e989f23a">BAT_Pol</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="code" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a> <a class="code" href="hal_8h.html#aad0452fd13906dfb96f4229b365d8cec">BAT_getLv</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">/* ジャイロセンサ */</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#af0a6a3bde3f31643840d594bd4f9c365">GYRO_Pol</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#af37c9b47339174b6bebdee336f4ff081">GYRO_SetRef</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="code" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a> <a class="code" href="hal_8h.html#a9bd944f73c6831de36705e53b258748f">GYRO_getSpeedErr</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="code" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a> <a class="code" href="hal_8h.html#af24a16c6e925ab102987b895b0a310ee">GYRO_getNowAngle</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="comment">/* 距離センサ */</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#ac182c6a9807124017d604e982542b9f7">DIST_Pol_Front</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a37d592ec2cd7d2f5dde6f1834fd21194">DIST_Pol_Side</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="code" href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a> <a class="code" href="hal_8h.html#a767b964b7663d7aa815f4ff6f4beb175">DIST_getNowVal</a>( <a class="code" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">enDIST_SEN_ID</a> en_id );</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="comment">/* エンコーダ */</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a7b54da5604d48bda1e0f93a69ca6c010">ENC_Sta</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#abe846a8e8f1903b254ef262737844021">ENC_Stop</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="hal_8h.html#a69197de55f9debb6ae7be73c769c90aa">  117</a></span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a69197de55f9debb6ae7be73c769c90aa">ENC_Clr</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a1da7389b9dca4dc21685daf83e20a7cf">ENC_GetDiv</a>( <a class="code" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a>* p_r, <a class="code" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a>* p_l );</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment">/* DCM */</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a8cd31e116eb971a38305adb9bdb7f5a8">DCM_setDirCw</a>( <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id );</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#acda95aa660dbca57a84c2fd98bf04f32">DCM_setDirCcw</a>( <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id );</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#ab18e64062995314d7e14d42871876c46">DCM_stopMot</a>( <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id );</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a03c48e9492e78788b41be298a77b0e06">DCM_brakeMot</a>( <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id );</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a666c122b2934e35c726fd741c62c3a90">DCM_staMot</a>( <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id );</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#a8e21f7d2278be4a78fdf01ceb4529f87">DCM_staMotAll</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<a class="code" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <span class="keywordtype">void</span> <a class="code" href="hal_8h.html#aaf9d3ecc3ea2b418a874c93df299121b">DCM_setPwmDuty</a>( <a class="code" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id, <a class="code" href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a> us_duty10 );</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif  // _HAL_H</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="ahal_8h_html_a9039797d94a67dd817a713b1034310c1"><div class="ttname"><a href="hal_8h.html#a9039797d94a67dd817a713b1034310c1">SCI_puts</a></div><div class="ttdeci">PUBLIC void SCI_puts(char *buffer)</div><div class="ttdef"><b>Definition:</b> hal.c:148</div></div>
+<div class="ttc" id="atypedefine_8h_html_a8d06b04c04132c6f7c0fcb08c6167455"><div class="ttname"><a href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a></div><div class="ttdeci">float FLOAT</div><div class="ttdef"><b>Definition:</b> typedefine.h:52</div></div>
+<div class="ttc" id="ahal_8h_html_af37c9b47339174b6bebdee336f4ff081"><div class="ttname"><a href="hal_8h.html#af37c9b47339174b6bebdee336f4ff081">GYRO_SetRef</a></div><div class="ttdeci">PUBLIC void GYRO_SetRef(void)</div><div class="ttdef"><b>Definition:</b> hal.c:401</div></div>
+<div class="ttc" id="ahal_8h_html_a1fd4ffe2430f6fa07446cfb8ec7fc0a9"><div class="ttname"><a href="hal_8h.html#a1fd4ffe2430f6fa07446cfb8ec7fc0a9">charget</a></div><div class="ttdeci">PUBLIC unsigned char charget(void)</div><div class="ttdef"><b>Definition:</b> hal.c:321</div></div>
+<div class="ttc" id="ahal_8h_html_a252d781d04ccc114fbef72757c58dedea817f43ce8b16038c3479513fd44d9712"><div class="ttname"><a href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea817f43ce8b16038c3479513fd44d9712">DCM_MAX</a></div><div class="ttdeci">@ DCM_MAX</div><div class="ttdef"><b>Definition:</b> hal.h:68</div></div>
+<div class="ttc" id="ahal_8h_html_a69197de55f9debb6ae7be73c769c90aa"><div class="ttname"><a href="hal_8h.html#a69197de55f9debb6ae7be73c769c90aa">ENC_Clr</a></div><div class="ttdeci">PUBLIC void ENC_Clr(void)</div></div>
+<div class="ttc" id="ahal_8h_html_a03c48e9492e78788b41be298a77b0e06"><div class="ttname"><a href="hal_8h.html#a03c48e9492e78788b41be298a77b0e06">DCM_brakeMot</a></div><div class="ttdeci">PUBLIC void DCM_brakeMot(enDCM_ID en_id)</div><div class="ttdef"><b>Definition:</b> hal.c:768</div></div>
+<div class="ttc" id="ahal_8h_html_af09783dd7d56e2a2f048fa30d74eef54"><div class="ttname"><a href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">enDIST_SEN_ID</a></div><div class="ttdeci">enDIST_SEN_ID</div><div class="ttdef"><b>Definition:</b> hal.h:56</div></div>
+<div class="ttc" id="atypedefine_8h_html_a5850d5316caf7f4cedd742fdf8cd7c02"><div class="ttname"><a href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a></div><div class="ttdeci">unsigned short USHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:46</div></div>
+<div class="ttc" id="ahal_8h_html_af09783dd7d56e2a2f048fa30d74eef54a8725234ccfc6d559ea545a90a9b794c6"><div class="ttname"><a href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a8725234ccfc6d559ea545a90a9b794c6">DIST_SEN_L_FRONT</a></div><div class="ttdeci">@ DIST_SEN_L_FRONT</div><div class="ttdef"><b>Definition:</b> hal.h:58</div></div>
+<div class="ttc" id="ahal_8h_html_af0a6a3bde3f31643840d594bd4f9c365"><div class="ttname"><a href="hal_8h.html#af0a6a3bde3f31643840d594bd4f9c365">GYRO_Pol</a></div><div class="ttdeci">PUBLIC void GYRO_Pol(void)</div><div class="ttdef"><b>Definition:</b> hal.c:469</div></div>
+<div class="ttc" id="ahal_8h_html_aad0452fd13906dfb96f4229b365d8cec"><div class="ttname"><a href="hal_8h.html#aad0452fd13906dfb96f4229b365d8cec">BAT_getLv</a></div><div class="ttdeci">PUBLIC FLOAT BAT_getLv(void)</div><div class="ttdef"><b>Definition:</b> hal.c:336</div></div>
+<div class="ttc" id="ahal_8h_html_a14f97f6843f7c0bf56eda88508f583a9"><div class="ttname"><a href="hal_8h.html#a14f97f6843f7c0bf56eda88508f583a9">SCI_putsL</a></div><div class="ttdeci">PUBLIC void SCI_putsL(char *buffer, int len)</div><div class="ttdef"><b>Definition:</b> hal.c:175</div></div>
+<div class="ttc" id="ahal_8h_html_a0e38c27681091bcd0e70dc8cd463111b"><div class="ttname"><a href="hal_8h.html#a0e38c27681091bcd0e70dc8cd463111b">charput</a></div><div class="ttdeci">PUBLIC void charput(unsigned char data)</div><div class="ttdef"><b>Definition:</b> hal.c:203</div></div>
+<div class="ttc" id="ahal_8h_html_adf0624f4b278345ffafa749b7950be59"><div class="ttname"><a href="hal_8h.html#adf0624f4b278345ffafa749b7950be59">SCI_gets</a></div><div class="ttdeci">PUBLIC int SCI_gets(char *buffer)</div><div class="ttdef"><b>Definition:</b> hal.c:292</div></div>
+<div class="ttc" id="ahal_8h_html_aa43e8df89dc000f5f79cd3febef11b09"><div class="ttname"><a href="hal_8h.html#aa43e8df89dc000f5f79cd3febef11b09">HAL_init</a></div><div class="ttdeci">PUBLIC void HAL_init(void)</div><div class="ttdef"><b>Definition:</b> hal.c:100</div></div>
+<div class="ttc" id="ahal_8h_html_af24a16c6e925ab102987b895b0a310ee"><div class="ttname"><a href="hal_8h.html#af24a16c6e925ab102987b895b0a310ee">GYRO_getNowAngle</a></div><div class="ttdeci">PUBLIC FLOAT GYRO_getNowAngle(void)</div><div class="ttdef"><b>Definition:</b> hal.c:454</div></div>
+<div class="ttc" id="ahal_8h_html_aaf9d3ecc3ea2b418a874c93df299121b"><div class="ttname"><a href="hal_8h.html#aaf9d3ecc3ea2b418a874c93df299121b">DCM_setPwmDuty</a></div><div class="ttdeci">PUBLIC void DCM_setPwmDuty(enDCM_ID en_id, USHORT us_duty10)</div><div class="ttdef"><b>Definition:</b> hal.c:838</div></div>
+<div class="ttc" id="ahal_8h_html_a9bd944f73c6831de36705e53b258748f"><div class="ttname"><a href="hal_8h.html#a9bd944f73c6831de36705e53b258748f">GYRO_getSpeedErr</a></div><div class="ttdeci">PUBLIC FLOAT GYRO_getSpeedErr(void)</div><div class="ttdef"><b>Definition:</b> hal.c:426</div></div>
+<div class="ttc" id="ahal_8h_html_a7d34d773d3056c82bcd43ba248267fab"><div class="ttname"><a href="hal_8h.html#a7d34d773d3056c82bcd43ba248267fab">SCI_getch</a></div><div class="ttdeci">PUBLIC char SCI_getch(void)</div><div class="ttdef"><b>Definition:</b> hal.c:244</div></div>
+<div class="ttc" id="ahal_8h_html_abe846a8e8f1903b254ef262737844021"><div class="ttname"><a href="hal_8h.html#abe846a8e8f1903b254ef262737844021">ENC_Stop</a></div><div class="ttdeci">PUBLIC void ENC_Stop(void)</div><div class="ttdef"><b>Definition:</b> hal.c:640</div></div>
+<div class="ttc" id="ahal_8h_html_a252d781d04ccc114fbef72757c58dedeac3e5309c9c0765223d660fe19aeb3fb0"><div class="ttname"><a href="hal_8h.html#a252d781d04ccc114fbef72757c58dedeac3e5309c9c0765223d660fe19aeb3fb0">DCM_R</a></div><div class="ttdeci">@ DCM_R</div><div class="ttdef"><b>Definition:</b> hal.h:66</div></div>
+<div class="ttc" id="aiodefine_8h_html"><div class="ttname"><a href="iodefine_8h.html">iodefine.h</a></div></div>
+<div class="ttc" id="ahal_8h_html_a1da7389b9dca4dc21685daf83e20a7cf"><div class="ttname"><a href="hal_8h.html#a1da7389b9dca4dc21685daf83e20a7cf">ENC_GetDiv</a></div><div class="ttdeci">PUBLIC void ENC_GetDiv(LONG *p_r, LONG *p_l)</div><div class="ttdef"><b>Definition:</b> hal.c:672</div></div>
+<div class="ttc" id="ahal_8h_html_acda95aa660dbca57a84c2fd98bf04f32"><div class="ttname"><a href="hal_8h.html#acda95aa660dbca57a84c2fd98bf04f32">DCM_setDirCcw</a></div><div class="ttdeci">PUBLIC void DCM_setDirCcw(enDCM_ID en_id)</div><div class="ttdef"><b>Definition:</b> hal.c:716</div></div>
+<div class="ttc" id="ahal_8h_html_a7b54da5604d48bda1e0f93a69ca6c010"><div class="ttname"><a href="hal_8h.html#a7b54da5604d48bda1e0f93a69ca6c010">ENC_Sta</a></div><div class="ttdeci">PUBLIC void ENC_Sta(void)</div><div class="ttdef"><b>Definition:</b> hal.c:624</div></div>
+<div class="ttc" id="atypedefine_8h_html"><div class="ttname"><a href="typedefine_8h.html">typedefine.h</a></div></div>
+<div class="ttc" id="ahal_8h_html_af09783dd7d56e2a2f048fa30d74eef54aa6df6687045990b61b3a461e8b49130a"><div class="ttname"><a href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aa6df6687045990b61b3a461e8b49130a">DIST_SEN_R_FRONT</a></div><div class="ttdeci">@ DIST_SEN_R_FRONT</div><div class="ttdef"><b>Definition:</b> hal.h:57</div></div>
+<div class="ttc" id="ahal_8h_html_ace0bb9cfe126b49cbd303562e989f23a"><div class="ttname"><a href="hal_8h.html#ace0bb9cfe126b49cbd303562e989f23a">BAT_Pol</a></div><div class="ttdeci">PUBLIC void BAT_Pol(void)</div><div class="ttdef"><b>Definition:</b> hal.c:353</div></div>
+<div class="ttc" id="atypedefine_8h_html_a9909bd3cf05f0906045f2ee85be4eeac"><div class="ttname"><a href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a></div><div class="ttdeci">short SHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:47</div></div>
+<div class="ttc" id="ahal_8h_html_af09783dd7d56e2a2f048fa30d74eef54a7ea1d35735130661faec3e019fba5d1c"><div class="ttname"><a href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a7ea1d35735130661faec3e019fba5d1c">DIST_SEN_NUM</a></div><div class="ttdeci">@ DIST_SEN_NUM</div><div class="ttdef"><b>Definition:</b> hal.h:61</div></div>
+<div class="ttc" id="ahal_8h_html_a252d781d04ccc114fbef72757c58dede"><div class="ttname"><a href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a></div><div class="ttdeci">enDCM_ID</div><div class="ttdef"><b>Definition:</b> hal.h:65</div></div>
+<div class="ttc" id="ahal_8h_html_a7c0afb452b679fea51dd70d8e9fb4afb"><div class="ttname"><a href="hal_8h.html#a7c0afb452b679fea51dd70d8e9fb4afb">SCI_putch</a></div><div class="ttdeci">PUBLIC void SCI_putch(char data)</div><div class="ttdef"><b>Definition:</b> hal.c:127</div></div>
+<div class="ttc" id="ahal_8h_html_a767b964b7663d7aa815f4ff6f4beb175"><div class="ttname"><a href="hal_8h.html#a767b964b7663d7aa815f4ff6f4beb175">DIST_getNowVal</a></div><div class="ttdeci">PUBLIC SHORT DIST_getNowVal(enDIST_SEN_ID en_id)</div><div class="ttdef"><b>Definition:</b> hal.c:507</div></div>
+<div class="ttc" id="ahal_8h_html_af09783dd7d56e2a2f048fa30d74eef54a1240f8bef310dd9d4ba44b74dde593b2"><div class="ttname"><a href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a1240f8bef310dd9d4ba44b74dde593b2">DIST_SEN_L_SIDE</a></div><div class="ttdeci">@ DIST_SEN_L_SIDE</div><div class="ttdef"><b>Definition:</b> hal.h:60</div></div>
+<div class="ttc" id="ahal_8h_html_ab2d9d895a735831a254ea1a18590fbe5"><div class="ttname"><a href="hal_8h.html#ab2d9d895a735831a254ea1a18590fbe5">SCI_getch_uc</a></div><div class="ttdeci">PUBLIC unsigned char SCI_getch_uc(void)</div><div class="ttdef"><b>Definition:</b> hal.c:268</div></div>
+<div class="ttc" id="ahal_8h_html_af09783dd7d56e2a2f048fa30d74eef54aedb2046cb9ab54ebbfc913b01581e306"><div class="ttname"><a href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aedb2046cb9ab54ebbfc913b01581e306">DIST_SEN_R_SIDE</a></div><div class="ttdeci">@ DIST_SEN_R_SIDE</div><div class="ttdef"><b>Definition:</b> hal.h:59</div></div>
+<div class="ttc" id="ahal_8h_html_a252d781d04ccc114fbef72757c58dedea1941a5855b67f8e1b2a9d3b7e4dc30bc"><div class="ttname"><a href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea1941a5855b67f8e1b2a9d3b7e4dc30bc">DCM_L</a></div><div class="ttdeci">@ DCM_L</div><div class="ttdef"><b>Definition:</b> hal.h:67</div></div>
+<div class="ttc" id="atypedefine_8h_html_a2a3e0cda5f1249bef6db47c5eb8e3813"><div class="ttname"><a href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a></div><div class="ttdeci">long LONG</div><div class="ttdef"><b>Definition:</b> typedefine.h:51</div></div>
+<div class="ttc" id="ahal_8h_html_a8cd31e116eb971a38305adb9bdb7f5a8"><div class="ttname"><a href="hal_8h.html#a8cd31e116eb971a38305adb9bdb7f5a8">DCM_setDirCw</a></div><div class="ttdeci">PUBLIC void DCM_setDirCw(enDCM_ID en_id)</div><div class="ttdef"><b>Definition:</b> hal.c:693</div></div>
+<div class="ttc" id="atypedefine_8h_html_ad17d551e31d1828c68acf40684849b7e"><div class="ttname"><a href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a></div><div class="ttdeci">#define PUBLIC</div><div class="ttdef"><b>Definition:</b> typedefine.h:34</div></div>
+<div class="ttc" id="ahal_8h_html_ac182c6a9807124017d604e982542b9f7"><div class="ttname"><a href="hal_8h.html#ac182c6a9807124017d604e982542b9f7">DIST_Pol_Front</a></div><div class="ttdeci">PUBLIC void DIST_Pol_Front(void)</div><div class="ttdef"><b>Definition:</b> hal.c:522</div></div>
+<div class="ttc" id="ahal_8h_html_a37d592ec2cd7d2f5dde6f1834fd21194"><div class="ttname"><a href="hal_8h.html#a37d592ec2cd7d2f5dde6f1834fd21194">DIST_Pol_Side</a></div><div class="ttdeci">PUBLIC void DIST_Pol_Side(void)</div><div class="ttdef"><b>Definition:</b> hal.c:573</div></div>
+<div class="ttc" id="ahal_8h_html_a8e21f7d2278be4a78fdf01ceb4529f87"><div class="ttname"><a href="hal_8h.html#a8e21f7d2278be4a78fdf01ceb4529f87">DCM_staMotAll</a></div><div class="ttdeci">PUBLIC void DCM_staMotAll(void)</div><div class="ttdef"><b>Definition:</b> hal.c:822</div></div>
+<div class="ttc" id="ahal_8h_html_ab18e64062995314d7e14d42871876c46"><div class="ttname"><a href="hal_8h.html#ab18e64062995314d7e14d42871876c46">DCM_stopMot</a></div><div class="ttdeci">PUBLIC void DCM_stopMot(enDCM_ID en_id)</div><div class="ttdef"><b>Definition:</b> hal.c:739</div></div>
+<div class="ttc" id="ahal_8h_html_a666c122b2934e35c726fd741c62c3a90"><div class="ttname"><a href="hal_8h.html#a666c122b2934e35c726fd741c62c3a90">DCM_staMot</a></div><div class="ttdeci">PUBLIC void DCM_staMot(enDCM_ID en_id)</div><div class="ttdef"><b>Definition:</b> hal.c:797</div></div>
+<div class="ttc" id="ahal_8h_html_a50c1a2214702c5c67ed4597b5085ccbd"><div class="ttname"><a href="hal_8h.html#a50c1a2214702c5c67ed4597b5085ccbd">SCI_chkRecv</a></div><div class="ttdeci">PUBLIC int SCI_chkRecv(void)</div><div class="ttdef"><b>Definition:</b> hal.c:224</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

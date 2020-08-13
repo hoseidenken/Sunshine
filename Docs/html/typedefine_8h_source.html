@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshine: typedefine.h ソースファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">typedefine.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="typedefine_8h.html">[詳解]</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*********************************************************************</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">* Device     : RX</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">* File Name  : typedefine.h</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">* Abstract   : Aliases of Integer Type.</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">* History    : 1.00  (2009-08-07)</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">* NOTE       : THIS IS A TYPICAL EXAMPLE.</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">* Copyright (C) 2009 Renesas Electronics Corporation.</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* and Renesas Solutions Corporation. All rights reserved.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">*********************************************************************/</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// 多重コンパイル抑止</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifndef _TYPEDEF_DEFINE_H</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define _TYPEDEF_DEFINE_H</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">/* -------------- */</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">/*  以下独自定義  */</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">/* -------------- */</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/* ON/OFF */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define ON                  (1)</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="typedefine_8h.html#ad76d1750a6cdeebd506bfcd6752554d2">   27</a></span>&#160;<span class="preprocessor">#define OFF                 (0)</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a29e413f6725b2ba32d165ffaa35b01e5">   28</a></span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/* Hi/Lo */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#define HI                  (1)</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a355125bc7c72a18ed70d4a3e24a3e0ce">   31</a></span>&#160;<span class="preprocessor">#define LO                  (0)</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="typedefine_8h.html#af6756f4391699fde08af441bb7d9d49f">   32</a></span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">/* スコープ設定 */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#define PUBLIC</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">   35</a></span>&#160;<span class="preprocessor">#define PROTECTED</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="typedefine_8h.html#af0cbb16b703892a6f3be7149dbe7d1a3">   36</a></span>&#160;<span class="preprocessor">#define PRIVATE             static</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">   37</a></span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">/* const、static、volatile */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#define CONST               const</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">   40</a></span>&#160;<span class="preprocessor">#define STATIC              static</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a10b2d890d871e1489bb02b7e70d9bdfb">   41</a></span>&#160;<span class="preprocessor">#define VOLATILE            volatile</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="typedefine_8h.html#ad11a425b3e3a32fcc63fb4296c23dcc4">   42</a></span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/* 型定義 */</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">   44</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>       <a class="code" href="typedefine_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">char</span>                <a class="code" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">   46</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span>      <a class="code" href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">   47</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">short</span>               <a class="code" href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">   48</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>        <a class="code" href="typedefine_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a392e62da233ed3e2f7c3fd4f487a3896">   49</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">int</span>                 <a class="code" href="typedefine_8h.html#a392e62da233ed3e2f7c3fd4f487a3896">INT</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">   50</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>       <a class="code" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">   51</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">long</span>                <a class="code" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">   52</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">float</span>               <a class="code" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="typedefine_8h.html#aeb90fd78c942591ef3a935cf98baf4f8">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">double</span>              <a class="code" href="typedefine_8h.html#aeb90fd78c942591ef3a935cf98baf4f8">DOUBLE</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a9de25ce33a4628ba620c6ec99fa46ede">   54</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a>*              <a class="code" href="typedefine_8h.html#a9de25ce33a4628ba620c6ec99fa46ede">PUCHAR</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="typedefine_8h.html#af4b4d1da3c377395694cf10bc985df7f">   55</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a>*             <a class="code" href="typedefine_8h.html#af4b4d1da3c377395694cf10bc985df7f">PUSHORT</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a253b627decfeb8fee3765eba6d720d74">   56</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>*              <a class="code" href="typedefine_8h.html#a253b627decfeb8fee3765eba6d720d74">PULONG</a>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a6addcc52e2dfddf231bf3213859ae2bb">   57</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>*               <a class="code" href="typedefine_8h.html#a6addcc52e2dfddf231bf3213859ae2bb">PCHAR</a>;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a97f77ad8403b44c765170df77d5d7742">   58</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a>*              <a class="code" href="typedefine_8h.html#a97f77ad8403b44c765170df77d5d7742">PSHORT</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a7b131903e5fe724ce96194b166121cd1">   59</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a>*               <a class="code" href="typedefine_8h.html#a7b131903e5fe724ce96194b166121cd1">PLONG</a>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a659f272f7c6a88a64d3dfc2306384a5a">   60</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a>*              <a class="code" href="typedefine_8h.html#a659f272f7c6a88a64d3dfc2306384a5a">PFLOAT</a>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a2a40523fd62ac5eb15647793c2834d3b">   61</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#aeb90fd78c942591ef3a935cf98baf4f8">DOUBLE</a>*             <a class="code" href="typedefine_8h.html#a2a40523fd62ac5eb15647793c2834d3b">PDOUBLE</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="typedefine_8h.html#aa4724c699cd3d25db63d86f500a3f84d">   62</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>                <a class="code" href="typedefine_8h.html#aa4724c699cd3d25db63d86f500a3f84d">STR</a>;            <span class="comment">// 文字列はこの定義を使用</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="typedefine_8h.html#afdb583d58db6585333de48819ffc3fe1">   63</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="code" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>          <a class="code" href="typedefine_8h.html#afdb583d58db6585333de48819ffc3fe1">CSTR</a>;           <span class="comment">// 文字列はこの定義を使用</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a6112ebe3d14b653676a2aa7ada3de661">   64</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>*               <a class="code" href="typedefine_8h.html#a6112ebe3d14b653676a2aa7ada3de661">PSTR</a>;           <span class="comment">// 文字列はこの定義を使用</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="typedefine_8h.html#affacc6e18e605c081e3d2a80f73363ba">   65</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="typedefine_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a> <a class="code" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>*         <a class="code" href="typedefine_8h.html#affacc6e18e605c081e3d2a80f73363ba">PCSTR</a>;          <span class="comment">// PSTRをROMに格納する場合はこちらを使用</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a28626b423d2b1aaa5d7c86dd51322da6">   66</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code" href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a>       <a class="code" href="typedefine_8h.html#a28626b423d2b1aaa5d7c86dd51322da6">VCHAR</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="typedefine_8h.html#af95a3670a08af7d00f218b8feaab6b19">   67</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code" href="typedefine_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a>      <a class="code" href="typedefine_8h.html#af95a3670a08af7d00f218b8feaab6b19">VUCHAR</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a1f0adac419be61e6d6e0d60bcffae474">   68</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code" href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a>      <a class="code" href="typedefine_8h.html#a1f0adac419be61e6d6e0d60bcffae474">VSHORT</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="typedefine_8h.html#ad8b552a55ad864a07638574891c278cd">   69</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code" href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a>     <a class="code" href="typedefine_8h.html#ad8b552a55ad864a07638574891c278cd">VUSHORT</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="typedefine_8h.html#ad3edee9edce479e7c37e6b7afafe397e">   70</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a>       <a class="code" href="typedefine_8h.html#ad3edee9edce479e7c37e6b7afafe397e">VLONG</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a4d72b8594471da1d1ba44a0ab1818c05">   71</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>      <a class="code" href="typedefine_8h.html#a4d72b8594471da1d1ba44a0ab1818c05">VULONG</a>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="typedefine_8h.html#adb0cb7b9606ec56569a3f32118ef1712">   72</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <a class="code" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a>      <a class="code" href="typedefine_8h.html#adb0cb7b9606ec56569a3f32118ef1712">VFLOAT</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">void</span> *              <a class="code" href="typedefine_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">/* ------------- */</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">/*  Renesas定義  */</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">/* ------------- */</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="typedefine_8h.html#aab65237ca9fbf4192a39cf12dd165942">   79</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">signed</span> <span class="keywordtype">char</span> <a class="code" href="typedefine_8h.html#aab65237ca9fbf4192a39cf12dd165942">_SBYTE</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="typedefine_8h.html#aac464b47452ce9406f88ef194e2becc1">   80</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="typedefine_8h.html#aac464b47452ce9406f88ef194e2becc1">_UBYTE</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a2c7cee059ec16036635c7e5500eb5e5d">   81</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">signed</span> <span class="keywordtype">short</span> <a class="code" href="typedefine_8h.html#a2c7cee059ec16036635c7e5500eb5e5d">_SWORD</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="typedefine_8h.html#af4b45f5ec97da370bd2173b4fe891d76">   82</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> <a class="code" href="typedefine_8h.html#af4b45f5ec97da370bd2173b4fe891d76">_UWORD</a>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="typedefine_8h.html#aefd1068e35d26c0e7d7079ddf2579174">   83</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">signed</span> <span class="keywordtype">int</span> <a class="code" href="typedefine_8h.html#aefd1068e35d26c0e7d7079ddf2579174">_SINT</a>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="line" href="typedefine_8h.html#af1d4b529b856acadd9e1b43f5d794d24">   84</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="typedefine_8h.html#af1d4b529b856acadd9e1b43f5d794d24">_UINT</a>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a931e4fd9bf350284fc21e94cd5ee126f">   85</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <a class="code" href="typedefine_8h.html#a931e4fd9bf350284fc21e94cd5ee126f">_SDWORD</a>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a1fd04328ad1e5a3e83788b99cddc35dd">   86</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <a class="code" href="typedefine_8h.html#a1fd04328ad1e5a3e83788b99cddc35dd">_UDWORD</a>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="typedefine_8h.html#ad5c9f90585f7a6c70f146b5a2330e656">   87</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">signed</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="typedefine_8h.html#ad5c9f90585f7a6c70f146b5a2330e656">_SQWORD</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="typedefine_8h.html#a9ed3c4cee4dec19c7f4a0dc925586680">   88</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> <a class="code" href="typedefine_8h.html#a9ed3c4cee4dec19c7f4a0dc925586680">_UQWORD</a>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="preprocessor">#endif  // _TYPEDEF_DEFINE_H</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="atypedefine_8h_html_a6112ebe3d14b653676a2aa7ada3de661"><div class="ttname"><a href="typedefine_8h.html#a6112ebe3d14b653676a2aa7ada3de661">PSTR</a></div><div class="ttdeci">CHAR * PSTR</div><div class="ttdef"><b>Definition:</b> typedefine.h:64</div></div>
+<div class="ttc" id="atypedefine_8h_html_aefd1068e35d26c0e7d7079ddf2579174"><div class="ttname"><a href="typedefine_8h.html#aefd1068e35d26c0e7d7079ddf2579174">_SINT</a></div><div class="ttdeci">signed int _SINT</div><div class="ttdef"><b>Definition:</b> typedefine.h:83</div></div>
+<div class="ttc" id="atypedefine_8h_html_a8d06b04c04132c6f7c0fcb08c6167455"><div class="ttname"><a href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a></div><div class="ttdeci">float FLOAT</div><div class="ttdef"><b>Definition:</b> typedefine.h:52</div></div>
+<div class="ttc" id="atypedefine_8h_html_a2c7cee059ec16036635c7e5500eb5e5d"><div class="ttname"><a href="typedefine_8h.html#a2c7cee059ec16036635c7e5500eb5e5d">_SWORD</a></div><div class="ttdeci">signed short _SWORD</div><div class="ttdef"><b>Definition:</b> typedefine.h:81</div></div>
+<div class="ttc" id="atypedefine_8h_html_ad5c9f90585f7a6c70f146b5a2330e656"><div class="ttname"><a href="typedefine_8h.html#ad5c9f90585f7a6c70f146b5a2330e656">_SQWORD</a></div><div class="ttdeci">signed long long _SQWORD</div><div class="ttdef"><b>Definition:</b> typedefine.h:87</div></div>
+<div class="ttc" id="atypedefine_8h_html_aeb90fd78c942591ef3a935cf98baf4f8"><div class="ttname"><a href="typedefine_8h.html#aeb90fd78c942591ef3a935cf98baf4f8">DOUBLE</a></div><div class="ttdeci">double DOUBLE</div><div class="ttdef"><b>Definition:</b> typedefine.h:53</div></div>
+<div class="ttc" id="atypedefine_8h_html_affacc6e18e605c081e3d2a80f73363ba"><div class="ttname"><a href="typedefine_8h.html#affacc6e18e605c081e3d2a80f73363ba">PCSTR</a></div><div class="ttdeci">CONST CHAR * PCSTR</div><div class="ttdef"><b>Definition:</b> typedefine.h:65</div></div>
+<div class="ttc" id="atypedefine_8h_html_a1fd04328ad1e5a3e83788b99cddc35dd"><div class="ttname"><a href="typedefine_8h.html#a1fd04328ad1e5a3e83788b99cddc35dd">_UDWORD</a></div><div class="ttdeci">unsigned long _UDWORD</div><div class="ttdef"><b>Definition:</b> typedefine.h:86</div></div>
+<div class="ttc" id="atypedefine_8h_html_a5850d5316caf7f4cedd742fdf8cd7c02"><div class="ttname"><a href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a></div><div class="ttdeci">unsigned short USHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:46</div></div>
+<div class="ttc" id="atypedefine_8h_html_a2b5e00c0c5a5aa5199ba9f28ec3e8caa"><div class="ttname"><a href="typedefine_8h.html#a2b5e00c0c5a5aa5199ba9f28ec3e8caa">PVOID</a></div><div class="ttdeci">void * PVOID</div><div class="ttdef"><b>Definition:</b> typedefine.h:73</div></div>
+<div class="ttc" id="atypedefine_8h_html_a4f4bb67531a9bf6f0b9c6ad76aeba587"><div class="ttname"><a href="typedefine_8h.html#a4f4bb67531a9bf6f0b9c6ad76aeba587">UCHAR</a></div><div class="ttdeci">unsigned char UCHAR</div><div class="ttdef"><b>Definition:</b> typedefine.h:44</div></div>
+<div class="ttc" id="atypedefine_8h_html_af1d4b529b856acadd9e1b43f5d794d24"><div class="ttname"><a href="typedefine_8h.html#af1d4b529b856acadd9e1b43f5d794d24">_UINT</a></div><div class="ttdeci">unsigned int _UINT</div><div class="ttdef"><b>Definition:</b> typedefine.h:84</div></div>
+<div class="ttc" id="atypedefine_8h_html_a9ed3c4cee4dec19c7f4a0dc925586680"><div class="ttname"><a href="typedefine_8h.html#a9ed3c4cee4dec19c7f4a0dc925586680">_UQWORD</a></div><div class="ttdeci">unsigned long long _UQWORD</div><div class="ttdef"><b>Definition:</b> typedefine.h:88</div></div>
+<div class="ttc" id="atypedefine_8h_html_a392e62da233ed3e2f7c3fd4f487a3896"><div class="ttname"><a href="typedefine_8h.html#a392e62da233ed3e2f7c3fd4f487a3896">INT</a></div><div class="ttdeci">int INT</div><div class="ttdef"><b>Definition:</b> typedefine.h:49</div></div>
+<div class="ttc" id="atypedefine_8h_html_a6addcc52e2dfddf231bf3213859ae2bb"><div class="ttname"><a href="typedefine_8h.html#a6addcc52e2dfddf231bf3213859ae2bb">PCHAR</a></div><div class="ttdeci">CHAR * PCHAR</div><div class="ttdef"><b>Definition:</b> typedefine.h:57</div></div>
+<div class="ttc" id="atypedefine_8h_html_a97f77ad8403b44c765170df77d5d7742"><div class="ttname"><a href="typedefine_8h.html#a97f77ad8403b44c765170df77d5d7742">PSHORT</a></div><div class="ttdeci">SHORT * PSHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:58</div></div>
+<div class="ttc" id="atypedefine_8h_html_a2a40523fd62ac5eb15647793c2834d3b"><div class="ttname"><a href="typedefine_8h.html#a2a40523fd62ac5eb15647793c2834d3b">PDOUBLE</a></div><div class="ttdeci">DOUBLE * PDOUBLE</div><div class="ttdef"><b>Definition:</b> typedefine.h:61</div></div>
+<div class="ttc" id="atypedefine_8h_html_a9de25ce33a4628ba620c6ec99fa46ede"><div class="ttname"><a href="typedefine_8h.html#a9de25ce33a4628ba620c6ec99fa46ede">PUCHAR</a></div><div class="ttdeci">UCHAR * PUCHAR</div><div class="ttdef"><b>Definition:</b> typedefine.h:54</div></div>
+<div class="ttc" id="atypedefine_8h_html_af4b45f5ec97da370bd2173b4fe891d76"><div class="ttname"><a href="typedefine_8h.html#af4b45f5ec97da370bd2173b4fe891d76">_UWORD</a></div><div class="ttdeci">unsigned short _UWORD</div><div class="ttdef"><b>Definition:</b> typedefine.h:82</div></div>
+<div class="ttc" id="atypedefine_8h_html_aac464b47452ce9406f88ef194e2becc1"><div class="ttname"><a href="typedefine_8h.html#aac464b47452ce9406f88ef194e2becc1">_UBYTE</a></div><div class="ttdeci">unsigned char _UBYTE</div><div class="ttdef"><b>Definition:</b> typedefine.h:80</div></div>
+<div class="ttc" id="atypedefine_8h_html_a659f272f7c6a88a64d3dfc2306384a5a"><div class="ttname"><a href="typedefine_8h.html#a659f272f7c6a88a64d3dfc2306384a5a">PFLOAT</a></div><div class="ttdeci">FLOAT * PFLOAT</div><div class="ttdef"><b>Definition:</b> typedefine.h:60</div></div>
+<div class="ttc" id="atypedefine_8h_html_aebb9e13210d88d43e32e735ada43a425"><div class="ttname"><a href="typedefine_8h.html#aebb9e13210d88d43e32e735ada43a425">CHAR</a></div><div class="ttdeci">char CHAR</div><div class="ttdef"><b>Definition:</b> typedefine.h:45</div></div>
+<div class="ttc" id="atypedefine_8h_html_a0c33b494a68ce28497e7ce8e5e95feff"><div class="ttname"><a href="typedefine_8h.html#a0c33b494a68ce28497e7ce8e5e95feff">CONST</a></div><div class="ttdeci">#define CONST</div><div class="ttdef"><b>Definition:</b> typedefine.h:39</div></div>
+<div class="ttc" id="atypedefine_8h_html_a7b131903e5fe724ce96194b166121cd1"><div class="ttname"><a href="typedefine_8h.html#a7b131903e5fe724ce96194b166121cd1">PLONG</a></div><div class="ttdeci">LONG * PLONG</div><div class="ttdef"><b>Definition:</b> typedefine.h:59</div></div>
+<div class="ttc" id="atypedefine_8h_html_ad3edee9edce479e7c37e6b7afafe397e"><div class="ttname"><a href="typedefine_8h.html#ad3edee9edce479e7c37e6b7afafe397e">VLONG</a></div><div class="ttdeci">volatile LONG VLONG</div><div class="ttdef"><b>Definition:</b> typedefine.h:70</div></div>
+<div class="ttc" id="atypedefine_8h_html_a1f0adac419be61e6d6e0d60bcffae474"><div class="ttname"><a href="typedefine_8h.html#a1f0adac419be61e6d6e0d60bcffae474">VSHORT</a></div><div class="ttdeci">volatile SHORT VSHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:68</div></div>
+<div class="ttc" id="atypedefine_8h_html_a28626b423d2b1aaa5d7c86dd51322da6"><div class="ttname"><a href="typedefine_8h.html#a28626b423d2b1aaa5d7c86dd51322da6">VCHAR</a></div><div class="ttdeci">volatile CHAR VCHAR</div><div class="ttdef"><b>Definition:</b> typedefine.h:66</div></div>
+<div class="ttc" id="atypedefine_8h_html_a9909bd3cf05f0906045f2ee85be4eeac"><div class="ttname"><a href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a></div><div class="ttdeci">short SHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:47</div></div>
+<div class="ttc" id="atypedefine_8h_html_af632da489ebc3708ec3ab6791ee53fa4"><div class="ttname"><a href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a></div><div class="ttdeci">unsigned long ULONG</div><div class="ttdef"><b>Definition:</b> typedefine.h:50</div></div>
+<div class="ttc" id="atypedefine_8h_html_a36cb3b01d81ffd844bbbfb54003e06ec"><div class="ttname"><a href="typedefine_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></div><div class="ttdeci">unsigned int UINT</div><div class="ttdef"><b>Definition:</b> typedefine.h:48</div></div>
+<div class="ttc" id="atypedefine_8h_html_a253b627decfeb8fee3765eba6d720d74"><div class="ttname"><a href="typedefine_8h.html#a253b627decfeb8fee3765eba6d720d74">PULONG</a></div><div class="ttdeci">ULONG * PULONG</div><div class="ttdef"><b>Definition:</b> typedefine.h:56</div></div>
+<div class="ttc" id="atypedefine_8h_html_a4d72b8594471da1d1ba44a0ab1818c05"><div class="ttname"><a href="typedefine_8h.html#a4d72b8594471da1d1ba44a0ab1818c05">VULONG</a></div><div class="ttdeci">volatile ULONG VULONG</div><div class="ttdef"><b>Definition:</b> typedefine.h:71</div></div>
+<div class="ttc" id="atypedefine_8h_html_af95a3670a08af7d00f218b8feaab6b19"><div class="ttname"><a href="typedefine_8h.html#af95a3670a08af7d00f218b8feaab6b19">VUCHAR</a></div><div class="ttdeci">volatile UCHAR VUCHAR</div><div class="ttdef"><b>Definition:</b> typedefine.h:67</div></div>
+<div class="ttc" id="atypedefine_8h_html_ad8b552a55ad864a07638574891c278cd"><div class="ttname"><a href="typedefine_8h.html#ad8b552a55ad864a07638574891c278cd">VUSHORT</a></div><div class="ttdeci">volatile USHORT VUSHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:69</div></div>
+<div class="ttc" id="atypedefine_8h_html_a2a3e0cda5f1249bef6db47c5eb8e3813"><div class="ttname"><a href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a></div><div class="ttdeci">long LONG</div><div class="ttdef"><b>Definition:</b> typedefine.h:51</div></div>
+<div class="ttc" id="atypedefine_8h_html_af4b4d1da3c377395694cf10bc985df7f"><div class="ttname"><a href="typedefine_8h.html#af4b4d1da3c377395694cf10bc985df7f">PUSHORT</a></div><div class="ttdeci">USHORT * PUSHORT</div><div class="ttdef"><b>Definition:</b> typedefine.h:55</div></div>
+<div class="ttc" id="atypedefine_8h_html_adb0cb7b9606ec56569a3f32118ef1712"><div class="ttname"><a href="typedefine_8h.html#adb0cb7b9606ec56569a3f32118ef1712">VFLOAT</a></div><div class="ttdeci">volatile FLOAT VFLOAT</div><div class="ttdef"><b>Definition:</b> typedefine.h:72</div></div>
+<div class="ttc" id="atypedefine_8h_html_aa4724c699cd3d25db63d86f500a3f84d"><div class="ttname"><a href="typedefine_8h.html#aa4724c699cd3d25db63d86f500a3f84d">STR</a></div><div class="ttdeci">CHAR STR</div><div class="ttdef"><b>Definition:</b> typedefine.h:62</div></div>
+<div class="ttc" id="atypedefine_8h_html_a931e4fd9bf350284fc21e94cd5ee126f"><div class="ttname"><a href="typedefine_8h.html#a931e4fd9bf350284fc21e94cd5ee126f">_SDWORD</a></div><div class="ttdeci">signed long _SDWORD</div><div class="ttdef"><b>Definition:</b> typedefine.h:85</div></div>
+<div class="ttc" id="atypedefine_8h_html_aab65237ca9fbf4192a39cf12dd165942"><div class="ttname"><a href="typedefine_8h.html#aab65237ca9fbf4192a39cf12dd165942">_SBYTE</a></div><div class="ttdeci">signed char _SBYTE</div><div class="ttdef"><b>Definition:</b> typedefine.h:79</div></div>
+<div class="ttc" id="atypedefine_8h_html_afdb583d58db6585333de48819ffc3fe1"><div class="ttname"><a href="typedefine_8h.html#afdb583d58db6585333de48819ffc3fe1">CSTR</a></div><div class="ttdeci">CONST CHAR CSTR</div><div class="ttdef"><b>Definition:</b> typedefine.h:63</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

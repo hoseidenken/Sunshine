@@ -1,2 +1,2 @@
 # Sunshine
-github邱ｴ鄙貞�ｼ繝�繝ｼ繧ｿ鄂ｮ縺榊ｴ
+github練習兼データ置き場

@@ -1,0 +1,667 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshine: Sunshine.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a> &#124;
+<a href="#var-members">変数</a>  </div>
+  <div class="headertitle">
+<div class="title">Sunshine.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>サンシャインのメインファイル  
+<a href="#details">[詳解]</a></p>
+<div class="textblock"><code>#include &lt;<a class="el" href="typedefine_8h_source.html">typedefine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="iodefine_8h_source.html">iodefine.h</a>&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;<a class="el" href="hal_8h_source.html">hal.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Sunshine.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="_sunshine_8c__incl.png" border="0" usemap="#_sunshine_8c" alt=""/></div>
+<map name="_sunshine_8c" id="_sunshine_8c">
+<area shape="rect" title="サンシャインのメインファイル" alt="" coords="81,5,167,32"/>
+<area shape="rect" href="typedefine_8h.html" title=" " alt="" coords="5,155,99,181"/>
+<area shape="rect" href="iodefine_8h.html" title=" " alt="" coords="158,155,237,181"/>
+<area shape="rect" title=" " alt="" coords="133,80,195,107"/>
+<area shape="rect" href="hal_8h.html" title=" " alt="" coords="59,80,109,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a2a223e9943ab45d4641812a7aa0c7ddb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a2a223e9943ab45d4641812a7aa0c7ddb">SW_CHATTERING_WAIT</a>&#160;&#160;&#160;(200)</td></tr>
+<tr class="separator:a2a223e9943ab45d4641812a7aa0c7ddb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:a1af026c93882edbbff8dfdccc8cf4bc6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6">enMODE</a> { <br />
+&#160;&#160;<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6a68ae6cc4ed3f27fe8040eb93d9c4efa3">MODE_0</a> = 0, 
+<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6af25f6bda513005f645d3626d9391f8cc">MODE_1</a>, 
+<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6a0a36399f2feba688abe010c193b8a5f1">MODE_2</a>, 
+<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6ad94e70da03012c70efde66c9136b0981">MODE_3</a>, 
+<br />
+&#160;&#160;<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6a8c99ca6cf1a8495ed3ab3fb6e3a6a2f7">MODE_4</a>, 
+<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6af3a26de39ce3b0519c3923d605a4e3bc">MODE_5</a>, 
+<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6afc10d2a591735b05526ea9160267097f">MODE_6</a>, 
+<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6a1d66447619757131503c463b6206ada2">MODE_7</a>, 
+<br />
+&#160;&#160;<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6a41458c67d3ce1cd55a69a0fc783035a1">MODE_8</a>, 
+<a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6a848d4eab93f99f76e3383e0b485a2b02">MODE_MAX</a>
+<br />
+ }</td></tr>
+<tr class="separator:a1af026c93882edbbff8dfdccc8cf4bc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a4e9b929d6cce048a849dcfdf8da38390"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a4e9b929d6cce048a849dcfdf8da38390">INTC_sys</a> (void)</td></tr>
+<tr class="memdesc:a4e9b929d6cce048a849dcfdf8da38390"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTU0のTGRA割り込み、1msec毎に関数が実行される。  <a href="_sunshine_8c.html#a4e9b929d6cce048a849dcfdf8da38390">[詳解]</a><br /></td></tr>
+<tr class="separator:a4e9b929d6cce048a849dcfdf8da38390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26999a9b38166a961029d0db07b04824"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a26999a9b38166a961029d0db07b04824">INTC_sen</a> (void)</td></tr>
+<tr class="memdesc:a26999a9b38166a961029d0db07b04824"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTU4のTGRA割り込み、0.25msec毎に関数が実行される。  <a href="_sunshine_8c.html#a26999a9b38166a961029d0db07b04824">[詳解]</a><br /></td></tr>
+<tr class="separator:a26999a9b38166a961029d0db07b04824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47b459a449e0b6a24f41cf89351cbd7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#ab47b459a449e0b6a24f41cf89351cbd7">CPU_init</a> (void)</td></tr>
+<tr class="memdesc:ab47b459a449e0b6a24f41cf89351cbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">マイコンのレジスタを初期化する <br  />
+  <a href="_sunshine_8c.html#ab47b459a449e0b6a24f41cf89351cbd7">[詳解]</a><br /></td></tr>
+<tr class="separator:ab47b459a449e0b6a24f41cf89351cbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b7c2632a6a51282d2ea4ae1b39d0e26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a8b7c2632a6a51282d2ea4ae1b39d0e26">RX621_staTimer</a> (void)</td></tr>
+<tr class="memdesc:a8b7c2632a6a51282d2ea4ae1b39d0e26"><td class="mdescLeft">&#160;</td><td class="mdescRight">マイコンのタイマーを開始する  <a href="_sunshine_8c.html#a8b7c2632a6a51282d2ea4ae1b39d0e26">[詳解]</a><br /></td></tr>
+<tr class="separator:a8b7c2632a6a51282d2ea4ae1b39d0e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5b53da0f9b46cf058322bf974065816"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#aa5b53da0f9b46cf058322bf974065816">TIME_init</a> (void)</td></tr>
+<tr class="memdesc:aa5b53da0f9b46cf058322bf974065816"><td class="mdescLeft">&#160;</td><td class="mdescRight">時間制御の初期化．起動後に1回だけ実行する関数．  <a href="_sunshine_8c.html#aa5b53da0f9b46cf058322bf974065816">[詳解]</a><br /></td></tr>
+<tr class="separator:aa5b53da0f9b46cf058322bf974065816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7c5e7359659d5ced519ce54e3dece91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#ad7c5e7359659d5ced519ce54e3dece91">TIME_wait</a> (<a class="el" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a> ul_time)</td></tr>
+<tr class="memdesc:ad7c5e7359659d5ced519ce54e3dece91"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定した ms 間、S/Wウェイトする  <a href="_sunshine_8c.html#ad7c5e7359659d5ced519ce54e3dece91">[詳解]</a><br /></td></tr>
+<tr class="separator:ad7c5e7359659d5ced519ce54e3dece91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa81de97847e54f37396e68cd46f5378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#aaa81de97847e54f37396e68cd46f5378">TIME_waitFree</a> (<a class="el" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a> ul_cnt)</td></tr>
+<tr class="memdesc:aaa81de97847e54f37396e68cd46f5378"><td class="mdescLeft">&#160;</td><td class="mdescRight">指定したフリーカウント間，S/Wウェイトする  <a href="_sunshine_8c.html#aaa81de97847e54f37396e68cd46f5378">[詳解]</a><br /></td></tr>
+<tr class="separator:aaa81de97847e54f37396e68cd46f5378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64fb47f4f9a5ac7c99220c4da54b587b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a64fb47f4f9a5ac7c99220c4da54b587b">MODE_inc</a> (void)</td></tr>
+<tr class="memdesc:a64fb47f4f9a5ac7c99220c4da54b587b"><td class="mdescLeft">&#160;</td><td class="mdescRight">モードを加算変更する  <a href="_sunshine_8c.html#a64fb47f4f9a5ac7c99220c4da54b587b">[詳解]</a><br /></td></tr>
+<tr class="separator:a64fb47f4f9a5ac7c99220c4da54b587b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370f39c229b939812d64be0e7b0eab1a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a370f39c229b939812d64be0e7b0eab1a">MODE_exe</a> (void)</td></tr>
+<tr class="memdesc:a370f39c229b939812d64be0e7b0eab1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">モードを実行する．各モードの処理をここに記述する．  <a href="_sunshine_8c.html#a370f39c229b939812d64be0e7b0eab1a">[詳解]</a><br /></td></tr>
+<tr class="separator:a370f39c229b939812d64be0e7b0eab1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b38a43a817e84a09adade8e5071790"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a11b38a43a817e84a09adade8e5071790">SYS_start</a> (void)</td></tr>
+<tr class="memdesc:a11b38a43a817e84a09adade8e5071790"><td class="mdescLeft">&#160;</td><td class="mdescRight">動作を開始する  <a href="_sunshine_8c.html#a11b38a43a817e84a09adade8e5071790">[詳解]</a><br /></td></tr>
+<tr class="separator:a11b38a43a817e84a09adade8e5071790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6288eba0f8e8ad3ab1544ad731eb7667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">main</a> (void)</td></tr>
+<tr class="memdesc:a6288eba0f8e8ad3ab1544ad731eb7667"><td class="mdescLeft">&#160;</td><td class="mdescRight">main処理．処理を終了させないように注意する．  <a href="_sunshine_8c.html#a6288eba0f8e8ad3ab1544ad731eb7667">[詳解]</a><br /></td></tr>
+<tr class="separator:a6288eba0f8e8ad3ab1544ad731eb7667"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+変数</h2></td></tr>
+<tr class="memitem:a00338967f69055249935e5cb53bdf226"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#ad8b552a55ad864a07638574891c278cd">VUSHORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a00338967f69055249935e5cb53bdf226">uc_Msec</a></td></tr>
+<tr class="separator:a00338967f69055249935e5cb53bdf226"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f36d7b18a3cf0d7e27b07f0346a006a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#af95a3670a08af7d00f218b8feaab6b19">VUCHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a3f36d7b18a3cf0d7e27b07f0346a006a">uc_Sec</a></td></tr>
+<tr class="separator:a3f36d7b18a3cf0d7e27b07f0346a006a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3337ef7708a4ead1f055bfb835ffd3b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#af95a3670a08af7d00f218b8feaab6b19">VUCHAR</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a3337ef7708a4ead1f055bfb835ffd3b2">uc_Min</a></td></tr>
+<tr class="separator:a3337ef7708a4ead1f055bfb835ffd3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d14fa1c09704e61694c68ab453afaa8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#a4d72b8594471da1d1ba44a0ab1818c05">VULONG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#a9d14fa1c09704e61694c68ab453afaa8">ul_Wait</a></td></tr>
+<tr class="separator:a9d14fa1c09704e61694c68ab453afaa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa42abcde7fcadd22c201cb1a8216dcfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6">enMODE</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_sunshine_8c.html#aa42abcde7fcadd22c201cb1a8216dcfe">en_Mode</a></td></tr>
+<tr class="separator:aa42abcde7fcadd22c201cb1a8216dcfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p>サンシャインのメインファイル </p>
+<dl class="section author"><dt>著者</dt><dd>外川，fucchi, TKR </dd></dl>
+<dl class="section date"><dt>日付</dt><dd>2020.08.13</dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.10.31 外川 新規（ファイルのインクルード） </dd>
+<dd>
+v1.1 2013.11.04 外川 タイマー割り込みの初期化追加 </dd>
+<dd>
+v1.2 2013.11.05 外川 内部時計追加 </dd>
+<dd>
+v1.3 2013.11.05 外川 ソフトウエアウエイト追加 </dd>
+<dd>
+v1.4 2013.11.05 外川 LED点滅処理追加 </dd>
+<dd>
+v1.5 2013.11.13 外川 モード追加 </dd>
+<dd>
+v1.6 2013.11.13 外川 シリアル通信＋printf追加 </dd>
+<dd>
+v1.7 2013.11.17 外川 電源監視追加 </dd>
+<dd>
+v1.8 2013.11.22 外川 ジャイロセンサ追加 </dd>
+<dd>
+v1.9 2013.12.01 外川 距離センサ追加 </dd>
+<dd>
+v2.0 2013.12.03 外川 エンコーダ追加 </dd>
+<dd>
+v2.1 2013.12.04 外川 DCM追加 </dd>
+<dd>
+v2.1.1 2020.03.25 fucchi GitHub(maste)スタート </dd>
+<dd>
+v2.2 2020.08.13 TKR Doxygen対応 </dd></dl>
+</div><h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a2a223e9943ab45d4641812a7aa0c7ddb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a223e9943ab45d4641812a7aa0c7ddb">&#9670;&nbsp;</a></span>SW_CHATTERING_WAIT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SW_CHATTERING_WAIT&#160;&#160;&#160;(200)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="a1af026c93882edbbff8dfdccc8cf4bc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af026c93882edbbff8dfdccc8cf4bc6">&#9670;&nbsp;</a></span>enMODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6">enMODE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6a68ae6cc4ed3f27fe8040eb93d9c4efa3"></a>MODE_0&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6af25f6bda513005f645d3626d9391f8cc"></a>MODE_1&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6a0a36399f2feba688abe010c193b8a5f1"></a>MODE_2&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6ad94e70da03012c70efde66c9136b0981"></a>MODE_3&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6a8c99ca6cf1a8495ed3ab3fb6e3a6a2f7"></a>MODE_4&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6af3a26de39ce3b0519c3923d605a4e3bc"></a>MODE_5&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6afc10d2a591735b05526ea9160267097f"></a>MODE_6&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6a1d66447619757131503c463b6206ada2"></a>MODE_7&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6a41458c67d3ce1cd55a69a0fc783035a1"></a>MODE_8&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a1af026c93882edbbff8dfdccc8cf4bc6a848d4eab93f99f76e3383e0b485a2b02"></a>MODE_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="ab47b459a449e0b6a24f41cf89351cbd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab47b459a449e0b6a24f41cf89351cbd7">&#9670;&nbsp;</a></span>CPU_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">CPU_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>マイコンのレジスタを初期化する <br  />
+ </p>
+<p><br  />
+ </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.10.31 外川 新規 </dd>
+<dd>
+v1.1 2013.11.11 外川 スイッチ追加 </dd>
+<dd>
+v1.2 2013.11.13 外川 シリアル通信追加 </dd></dl>
+
+</div>
+</div>
+<a id="a26999a9b38166a961029d0db07b04824"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a26999a9b38166a961029d0db07b04824">&#9670;&nbsp;</a></span>INTC_sen()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void INTC_sen </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTU4のTGRA割り込み、0.25msec毎に関数が実行される。 </p>
+<p>正常にマイコンが動作している場合、250usec周期で</p>
+<p>距離センサ0 → 距離センサ1 → 距離センサ2 → ジャイロセンサ の順でスキャンする。</p>
+<p>従って、1センサのスキャン周期は1msecとなる。 </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.04 外川 新規 </dd></dl>
+
+</div>
+</div>
+<a id="a4e9b929d6cce048a849dcfdf8da38390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e9b929d6cce048a849dcfdf8da38390">&#9670;&nbsp;</a></span>INTC_sys()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void INTC_sys </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MTU0のTGRA割り込み、1msec毎に関数が実行される。 </p>
+<p><br  />
+</p>
+<p>正常にマイコンが動作している場合、1sec周期でLED_SYSが点滅する。 </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.04 外川 新規 </dd>
+<dd>
+v1.1 2013.11.05 外川 内部時計追加 </dd>
+<dd>
+v1.2 2013.11.05 外川 ソフトウエアウエイト追加 </dd>
+<dd>
+v1.3 2013.11.05 外川 システム用LED動作追加 <br  />
+ </dd></dl>
+
+</div>
+</div>
+<a id="a6288eba0f8e8ad3ab1544ad731eb7667"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6288eba0f8e8ad3ab1544ad731eb7667">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>main処理．処理を終了させないように注意する． </p>
+<p><br  />
+ </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.10.31 外川 新規 </dd>
+<dd>
+v1.1 2013.11.05 外川 タイマー割り込みの初期化追加 </dd>
+<dd>
+v1.2 2013.11.05 外川 タイマーモジュールの初期化追加 </dd>
+<dd>
+v1.3 2013.11.05 外川 LED動作追加 </dd>
+<dd>
+v1.4 2013.11.27 外川 動作開始用関数作成 </dd></dl>
+
+</div>
+</div>
+<a id="a370f39c229b939812d64be0e7b0eab1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a370f39c229b939812d64be0e7b0eab1a">&#9670;&nbsp;</a></span>MODE_exe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MODE_exe </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モードを実行する．各モードの処理をここに記述する． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.13 外川 新規 </dd></dl>
+
+</div>
+</div>
+<a id="a64fb47f4f9a5ac7c99220c4da54b587b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a64fb47f4f9a5ac7c99220c4da54b587b">&#9670;&nbsp;</a></span>MODE_inc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">MODE_inc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>モードを加算変更する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.13 外川 新規 </dd></dl>
+
+</div>
+</div>
+<a id="a8b7c2632a6a51282d2ea4ae1b39d0e26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8b7c2632a6a51282d2ea4ae1b39d0e26">&#9670;&nbsp;</a></span>RX621_staTimer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">RX621_staTimer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>マイコンのタイマーを開始する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.04 外川 新規 </dd></dl>
+
+</div>
+</div>
+<a id="a11b38a43a817e84a09adade8e5071790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11b38a43a817e84a09adade8e5071790">&#9670;&nbsp;</a></span>SYS_start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SYS_start </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>動作を開始する </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.25 外川 新規 </dd></dl>
+
+</div>
+</div>
+<a id="aa5b53da0f9b46cf058322bf974065816"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5b53da0f9b46cf058322bf974065816">&#9670;&nbsp;</a></span>TIME_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>時間制御の初期化．起動後に1回だけ実行する関数． </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.05 外川 新規 </dd>
+<dd>
+v1.1 2013.11.05 外川 ソフトウエアウエイト追加 </dd></dl>
+
+</div>
+</div>
+<a id="ad7c5e7359659d5ced519ce54e3dece91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7c5e7359659d5ced519ce54e3dece91">&#9670;&nbsp;</a></span>TIME_wait()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_wait </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>&#160;</td>
+          <td class="paramname"><em>ul_time</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定した ms 間、S/Wウェイトする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ul_time</td><td>待つ時間 [msec]，最大　600000(=10min) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.05 外川 新規 </dd></dl>
+
+</div>
+</div>
+<a id="aaa81de97847e54f37396e68cd46f5378"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa81de97847e54f37396e68cd46f5378">&#9670;&nbsp;</a></span>TIME_waitFree()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TIME_waitFree </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="typedefine_8h.html#af632da489ebc3708ec3ab6791ee53fa4">ULONG</a>&#160;</td>
+          <td class="paramname"><em>ul_cnt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>指定したフリーカウント間，S/Wウェイトする </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ul_cnt</td><td>カウント値 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.11.05 外川 新規 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">変数詳解</h2>
+<a id="aa42abcde7fcadd22c201cb1a8216dcfe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa42abcde7fcadd22c201cb1a8216dcfe">&#9670;&nbsp;</a></span>en_Mode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="_sunshine_8c.html#a1af026c93882edbbff8dfdccc8cf4bc6">enMODE</a> en_Mode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3337ef7708a4ead1f055bfb835ffd3b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3337ef7708a4ead1f055bfb835ffd3b2">&#9670;&nbsp;</a></span>uc_Min</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#af95a3670a08af7d00f218b8feaab6b19">VUCHAR</a> uc_Min</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a00338967f69055249935e5cb53bdf226"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00338967f69055249935e5cb53bdf226">&#9670;&nbsp;</a></span>uc_Msec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#ad8b552a55ad864a07638574891c278cd">VUSHORT</a> uc_Msec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3f36d7b18a3cf0d7e27b07f0346a006a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f36d7b18a3cf0d7e27b07f0346a006a">&#9670;&nbsp;</a></span>uc_Sec</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#af95a3670a08af7d00f218b8feaab6b19">VUCHAR</a> uc_Sec</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d14fa1c09704e61694c68ab453afaa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d14fa1c09704e61694c68ab453afaa8">&#9670;&nbsp;</a></span>ul_Wait</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#a5e151c615eda34903514212f05a5ccf8">PRIVATE</a> <a class="el" href="typedefine_8h.html#a4d72b8594471da1d1ba44a0ab1818c05">VULONG</a> ul_Wait</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

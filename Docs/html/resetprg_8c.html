@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshine: resetprg.c ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">resetprg.c ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;machine.h&gt;</code><br />
+<code>#include &lt;_h_c_lib.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="typedefine_8h_source.html">typedefine.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="stacksct_8h_source.html">stacksct.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+resetprg.c の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="resetprg_8c__incl.png" border="0" usemap="#resetprg_8c" alt=""/></div>
+<map name="resetprg_8c" id="resetprg_8c">
+<area shape="rect" title=" " alt="" coords="169,5,249,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,88,107"/>
+<area shape="rect" title=" " alt="" coords="113,80,194,107"/>
+<area shape="rect" href="typedefine_8h.html" title=" " alt="" coords="219,80,312,107"/>
+<area shape="rect" href="stacksct_8h.html" title=" " alt="" coords="336,80,419,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:a1ebb4853568257095fa65698bec7473e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#a1ebb4853568257095fa65698bec7473e">PSW_init</a>&#160;&#160;&#160;0x00010000</td></tr>
+<tr class="separator:a1ebb4853568257095fa65698bec7473e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24099b15e3d3c3f2f31e3f29342cb9fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#a24099b15e3d3c3f2f31e3f29342cb9fb">FPSW_init</a>&#160;&#160;&#160;0x00000000</td></tr>
+<tr class="separator:a24099b15e3d3c3f2f31e3f29342cb9fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7aa1996e17221d6742ccbe299f17f7a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#ad7aa1996e17221d6742ccbe299f17f7a">_ROUND</a>&#160;&#160;&#160;0x00000000</td></tr>
+<tr class="separator:ad7aa1996e17221d6742ccbe299f17f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420f86ab3dd3d3bcf5d5b0e91c1a68e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#a420f86ab3dd3d3bcf5d5b0e91c1a68e1">_DENOM</a>&#160;&#160;&#160;0x00000000</td></tr>
+<tr class="separator:a420f86ab3dd3d3bcf5d5b0e91c1a68e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:a3fe9583050a6d22f2c254e63225697bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#a3fe9583050a6d22f2c254e63225697bb">PowerON_Reset_PC</a> (void)</td></tr>
+<tr class="separator:a3fe9583050a6d22f2c254e63225697bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a568b3afc214ba30be5bf526d6b27b611"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#a568b3afc214ba30be5bf526d6b27b611">main</a> (void)</td></tr>
+<tr class="memdesc:a568b3afc214ba30be5bf526d6b27b611"><td class="mdescLeft">&#160;</td><td class="mdescRight">main処理．処理を終了させないように注意する．  <a href="resetprg_8c.html#a568b3afc214ba30be5bf526d6b27b611">[詳解]</a><br /></td></tr>
+<tr class="separator:a568b3afc214ba30be5bf526d6b27b611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3690bc712d3dee1e21a130c72ceca1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#afd3690bc712d3dee1e21a130c72ceca1">_INIT_IOLIB</a> (void)</td></tr>
+<tr class="separator:afd3690bc712d3dee1e21a130c72ceca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66fa10b7f5938c4274b63467615768b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="resetprg_8c.html#a66fa10b7f5938c4274b63467615768b9">_CLOSEALL</a> (void)</td></tr>
+<tr class="separator:a66fa10b7f5938c4274b63467615768b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a420f86ab3dd3d3bcf5d5b0e91c1a68e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420f86ab3dd3d3bcf5d5b0e91c1a68e1">&#9670;&nbsp;</a></span>_DENOM</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _DENOM&#160;&#160;&#160;0x00000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7aa1996e17221d6742ccbe299f17f7a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7aa1996e17221d6742ccbe299f17f7a">&#9670;&nbsp;</a></span>_ROUND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _ROUND&#160;&#160;&#160;0x00000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24099b15e3d3c3f2f31e3f29342cb9fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24099b15e3d3c3f2f31e3f29342cb9fb">&#9670;&nbsp;</a></span>FPSW_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define FPSW_init&#160;&#160;&#160;0x00000000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ebb4853568257095fa65698bec7473e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ebb4853568257095fa65698bec7473e">&#9670;&nbsp;</a></span>PSW_init</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define PSW_init&#160;&#160;&#160;0x00010000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a66fa10b7f5938c4274b63467615768b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66fa10b7f5938c4274b63467615768b9">&#9670;&nbsp;</a></span>_CLOSEALL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _CLOSEALL </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd3690bc712d3dee1e21a130c72ceca1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd3690bc712d3dee1e21a130c72ceca1">&#9670;&nbsp;</a></span>_INIT_IOLIB()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void _INIT_IOLIB </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a568b3afc214ba30be5bf526d6b27b611"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a568b3afc214ba30be5bf526d6b27b611">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>main処理．処理を終了させないように注意する． </p>
+<p><br  />
+ </p><dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">なし</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>戻り値</dt><dd>なし </dd></dl>
+<dl class="section author"><dt>著者</dt><dd>外川 </dd></dl>
+<dl class="section version"><dt>バージョン</dt><dd>v1.0 2013.10.31 外川 新規 </dd>
+<dd>
+v1.1 2013.11.05 外川 タイマー割り込みの初期化追加 </dd>
+<dd>
+v1.2 2013.11.05 外川 タイマーモジュールの初期化追加 </dd>
+<dd>
+v1.3 2013.11.05 外川 LED動作追加 </dd>
+<dd>
+v1.4 2013.11.27 外川 動作開始用関数作成 </dd></dl>
+
+</div>
+</div>
+<a id="a3fe9583050a6d22f2c254e63225697bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fe9583050a6d22f2c254e63225697bb">&#9670;&nbsp;</a></span>PowerON_Reset_PC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PowerON_Reset_PC </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>

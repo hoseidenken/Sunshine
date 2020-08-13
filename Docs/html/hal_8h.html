@@ -1,0 +1,1059 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.19"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sunshine: hal.h ファイル</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sunshine
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.19 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">マクロ定義</a> &#124;
+<a href="#enum-members">列挙型</a> &#124;
+<a href="#func-members">関数</a>  </div>
+  <div class="headertitle">
+<div class="title">hal.h ファイル</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;<a class="el" href="typedefine_8h_source.html">typedefine.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="iodefine_8h_source.html">iodefine.h</a>&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+hal.h の依存先関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="hal_8h__incl.png" border="0" usemap="#hal_8h" alt=""/></div>
+<map name="hal_8h" id="hal_8h">
+<area shape="rect" title=" " alt="" coords="81,5,132,32"/>
+<area shape="rect" href="typedefine_8h.html" title=" " alt="" coords="5,80,99,107"/>
+<area shape="rect" href="iodefine_8h.html" title=" " alt="" coords="123,80,202,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+被依存関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="hal_8h__dep__incl.png" border="0" usemap="#hal_8hdep" alt=""/></div>
+<map name="hal_8hdep" id="hal_8hdep">
+<area shape="rect" title=" " alt="" coords="88,5,139,32"/>
+<area shape="rect" href="hal_8c.html" title=" " alt="" coords="5,80,56,107"/>
+<area shape="rect" href="intprg_8c.html" title=" " alt="" coords="81,80,146,107"/>
+<area shape="rect" href="_sunshine_8c.html" title="サンシャインのメインファイル" alt="" coords="170,80,257,107"/>
+</map>
+</div>
+</div>
+<p><a href="hal_8h_source.html">[ソースコード]</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+マクロ定義</h2></td></tr>
+<tr class="memitem:acb73b4a23aa82c68dd47fc38f80c6e63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#acb73b4a23aa82c68dd47fc38f80c6e63">LED_SYS</a>&#160;&#160;&#160;( PORT3.DR.BIT.B2 )</td></tr>
+<tr class="separator:acb73b4a23aa82c68dd47fc38f80c6e63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a828bed975a6f3a24231309200b24cf23"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a828bed975a6f3a24231309200b24cf23">LED8</a>&#160;&#160;&#160;( PORTD.DR.BYTE )</td></tr>
+<tr class="separator:a828bed975a6f3a24231309200b24cf23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab245600beef06916bb4d3bb18f6c4d68"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#ab245600beef06916bb4d3bb18f6c4d68">LED8_ALL_OFF</a>&#160;&#160;&#160;( 0x00 )</td></tr>
+<tr class="separator:ab245600beef06916bb4d3bb18f6c4d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae308f3b0841a155922b91f4a24bbcd71"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#ae308f3b0841a155922b91f4a24bbcd71">LED8_ALL_ON</a>&#160;&#160;&#160;( 0xff )</td></tr>
+<tr class="separator:ae308f3b0841a155922b91f4a24bbcd71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2a2674604bcd97d77911de92e2a1834"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#aa2a2674604bcd97d77911de92e2a1834">SW_INC_PIN</a>&#160;&#160;&#160;(PORTC.PORT.BIT.B6)</td></tr>
+<tr class="separator:aa2a2674604bcd97d77911de92e2a1834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfdd27022aa8c85cdcfc498bc69864f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#abfdd27022aa8c85cdcfc498bc69864f9">SW_EXE_PIN</a>&#160;&#160;&#160;(PORTC.PORT.BIT.B7)</td></tr>
+<tr class="separator:abfdd27022aa8c85cdcfc498bc69864f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d9e3aced311179a2914e0c9b13d0f9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a19d9e3aced311179a2914e0c9b13d0f9">SW_ON</a>&#160;&#160;&#160;(<a class="el" href="typedefine_8h.html#a29e413f6725b2ba32d165ffaa35b01e5">OFF</a>)</td></tr>
+<tr class="separator:a19d9e3aced311179a2914e0c9b13d0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8900c9ec0efde1da3253b718574067"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#acd8900c9ec0efde1da3253b718574067">SW_OFF</a>&#160;&#160;&#160;(<a class="el" href="typedefine_8h.html#ad76d1750a6cdeebd506bfcd6752554d2">ON</a>)</td></tr>
+<tr class="separator:acd8900c9ec0efde1da3253b718574067"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539e266c323acc28fc6ef89f1acbd390"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a539e266c323acc28fc6ef89f1acbd390">LED_BAT0</a>&#160;&#160;&#160;( PORT5.DR.BIT.B1 )</td></tr>
+<tr class="separator:a539e266c323acc28fc6ef89f1acbd390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1295835892ab3dd6e4d09c061f655c9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a1295835892ab3dd6e4d09c061f655c9c">LED_BAT1</a>&#160;&#160;&#160;( PORT5.DR.BIT.B2 )</td></tr>
+<tr class="separator:a1295835892ab3dd6e4d09c061f655c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d9b89d2fb1ab5c153057adce43098a0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a0d9b89d2fb1ab5c153057adce43098a0">LED_DIST_RF</a>&#160;&#160;&#160;( PORTE.DR.BIT.B0 )</td></tr>
+<tr class="separator:a0d9b89d2fb1ab5c153057adce43098a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0814715088d47391f95399965485daf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#aa0814715088d47391f95399965485daf">LED_DIST_RS</a>&#160;&#160;&#160;( PORTE.DR.BIT.B1 )</td></tr>
+<tr class="separator:aa0814715088d47391f95399965485daf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a722077d8e8e3dd886449517c187a5921"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a722077d8e8e3dd886449517c187a5921">LED_DIST_LF</a>&#160;&#160;&#160;( PORTE.DR.BIT.B2 )</td></tr>
+<tr class="separator:a722077d8e8e3dd886449517c187a5921"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa595aa798ce3c805797e1ee10fbf3e6c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#aa595aa798ce3c805797e1ee10fbf3e6c">LED_DIST_LS</a>&#160;&#160;&#160;( PORTE.DR.BIT.B3 )</td></tr>
+<tr class="separator:aa595aa798ce3c805797e1ee10fbf3e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabb2a00a8eee345feb46fc7842598b0f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#aabb2a00a8eee345feb46fc7842598b0f">ENC_R_TCNT</a>&#160;&#160;&#160;(MTU7.TCNT)</td></tr>
+<tr class="separator:aabb2a00a8eee345feb46fc7842598b0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5efddc8727910e22d349281084ad054e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a5efddc8727910e22d349281084ad054e">ENC_L_TCNT</a>&#160;&#160;&#160;(MTU8.TCNT)</td></tr>
+<tr class="separator:a5efddc8727910e22d349281084ad054e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+列挙型</h2></td></tr>
+<tr class="memitem:af09783dd7d56e2a2f048fa30d74eef54"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">enDIST_SEN_ID</a> { <br />
+&#160;&#160;<a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aa6df6687045990b61b3a461e8b49130a">DIST_SEN_R_FRONT</a> = 0, 
+<a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a8725234ccfc6d559ea545a90a9b794c6">DIST_SEN_L_FRONT</a>, 
+<a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54aedb2046cb9ab54ebbfc913b01581e306">DIST_SEN_R_SIDE</a>, 
+<a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a1240f8bef310dd9d4ba44b74dde593b2">DIST_SEN_L_SIDE</a>, 
+<br />
+&#160;&#160;<a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54a7ea1d35735130661faec3e019fba5d1c">DIST_SEN_NUM</a>
+<br />
+ }</td></tr>
+<tr class="separator:af09783dd7d56e2a2f048fa30d74eef54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a252d781d04ccc114fbef72757c58dede"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> { <a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedeac3e5309c9c0765223d660fe19aeb3fb0">DCM_R</a> = 0, 
+<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea1941a5855b67f8e1b2a9d3b7e4dc30bc">DCM_L</a>, 
+<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dedea817f43ce8b16038c3479513fd44d9712">DCM_MAX</a>
+ }</td></tr>
+<tr class="separator:a252d781d04ccc114fbef72757c58dede"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+関数</h2></td></tr>
+<tr class="memitem:aa43e8df89dc000f5f79cd3febef11b09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#aa43e8df89dc000f5f79cd3febef11b09">HAL_init</a> (void)</td></tr>
+<tr class="separator:aa43e8df89dc000f5f79cd3febef11b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c0afb452b679fea51dd70d8e9fb4afb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a7c0afb452b679fea51dd70d8e9fb4afb">SCI_putch</a> (char data)</td></tr>
+<tr class="separator:a7c0afb452b679fea51dd70d8e9fb4afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9039797d94a67dd817a713b1034310c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a9039797d94a67dd817a713b1034310c1">SCI_puts</a> (char *buffer)</td></tr>
+<tr class="separator:a9039797d94a67dd817a713b1034310c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14f97f6843f7c0bf56eda88508f583a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a14f97f6843f7c0bf56eda88508f583a9">SCI_putsL</a> (char *buffer, int len)</td></tr>
+<tr class="separator:a14f97f6843f7c0bf56eda88508f583a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e38c27681091bcd0e70dc8cd463111b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a0e38c27681091bcd0e70dc8cd463111b">charput</a> (unsigned char data)</td></tr>
+<tr class="separator:a0e38c27681091bcd0e70dc8cd463111b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50c1a2214702c5c67ed4597b5085ccbd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a50c1a2214702c5c67ed4597b5085ccbd">SCI_chkRecv</a> (void)</td></tr>
+<tr class="separator:a50c1a2214702c5c67ed4597b5085ccbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d34d773d3056c82bcd43ba248267fab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a7d34d773d3056c82bcd43ba248267fab">SCI_getch</a> (void)</td></tr>
+<tr class="separator:a7d34d773d3056c82bcd43ba248267fab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2d9d895a735831a254ea1a18590fbe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#ab2d9d895a735831a254ea1a18590fbe5">SCI_getch_uc</a> (void)</td></tr>
+<tr class="separator:ab2d9d895a735831a254ea1a18590fbe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0624f4b278345ffafa749b7950be59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#adf0624f4b278345ffafa749b7950be59">SCI_gets</a> (char *buffer)</td></tr>
+<tr class="separator:adf0624f4b278345ffafa749b7950be59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fd4ffe2430f6fa07446cfb8ec7fc0a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a1fd4ffe2430f6fa07446cfb8ec7fc0a9">charget</a> (void)</td></tr>
+<tr class="separator:a1fd4ffe2430f6fa07446cfb8ec7fc0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0bb9cfe126b49cbd303562e989f23a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#ace0bb9cfe126b49cbd303562e989f23a">BAT_Pol</a> (void)</td></tr>
+<tr class="separator:ace0bb9cfe126b49cbd303562e989f23a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad0452fd13906dfb96f4229b365d8cec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#aad0452fd13906dfb96f4229b365d8cec">BAT_getLv</a> (void)</td></tr>
+<tr class="separator:aad0452fd13906dfb96f4229b365d8cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a6a3bde3f31643840d594bd4f9c365"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#af0a6a3bde3f31643840d594bd4f9c365">GYRO_Pol</a> (void)</td></tr>
+<tr class="separator:af0a6a3bde3f31643840d594bd4f9c365"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37c9b47339174b6bebdee336f4ff081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#af37c9b47339174b6bebdee336f4ff081">GYRO_SetRef</a> (void)</td></tr>
+<tr class="separator:af37c9b47339174b6bebdee336f4ff081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bd944f73c6831de36705e53b258748f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a9bd944f73c6831de36705e53b258748f">GYRO_getSpeedErr</a> (void)</td></tr>
+<tr class="separator:a9bd944f73c6831de36705e53b258748f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24a16c6e925ab102987b895b0a310ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#af24a16c6e925ab102987b895b0a310ee">GYRO_getNowAngle</a> (void)</td></tr>
+<tr class="separator:af24a16c6e925ab102987b895b0a310ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac182c6a9807124017d604e982542b9f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#ac182c6a9807124017d604e982542b9f7">DIST_Pol_Front</a> (void)</td></tr>
+<tr class="separator:ac182c6a9807124017d604e982542b9f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d592ec2cd7d2f5dde6f1834fd21194"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a37d592ec2cd7d2f5dde6f1834fd21194">DIST_Pol_Side</a> (void)</td></tr>
+<tr class="separator:a37d592ec2cd7d2f5dde6f1834fd21194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767b964b7663d7aa815f4ff6f4beb175"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a767b964b7663d7aa815f4ff6f4beb175">DIST_getNowVal</a> (<a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">enDIST_SEN_ID</a> en_id)</td></tr>
+<tr class="separator:a767b964b7663d7aa815f4ff6f4beb175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b54da5604d48bda1e0f93a69ca6c010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a7b54da5604d48bda1e0f93a69ca6c010">ENC_Sta</a> (void)</td></tr>
+<tr class="separator:a7b54da5604d48bda1e0f93a69ca6c010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe846a8e8f1903b254ef262737844021"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#abe846a8e8f1903b254ef262737844021">ENC_Stop</a> (void)</td></tr>
+<tr class="separator:abe846a8e8f1903b254ef262737844021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69197de55f9debb6ae7be73c769c90aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a69197de55f9debb6ae7be73c769c90aa">ENC_Clr</a> (void)</td></tr>
+<tr class="separator:a69197de55f9debb6ae7be73c769c90aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da7389b9dca4dc21685daf83e20a7cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a1da7389b9dca4dc21685daf83e20a7cf">ENC_GetDiv</a> (<a class="el" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a> *p_r, <a class="el" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a> *p_l)</td></tr>
+<tr class="separator:a1da7389b9dca4dc21685daf83e20a7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cd31e116eb971a38305adb9bdb7f5a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a8cd31e116eb971a38305adb9bdb7f5a8">DCM_setDirCw</a> (<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id)</td></tr>
+<tr class="separator:a8cd31e116eb971a38305adb9bdb7f5a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda95aa660dbca57a84c2fd98bf04f32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#acda95aa660dbca57a84c2fd98bf04f32">DCM_setDirCcw</a> (<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id)</td></tr>
+<tr class="separator:acda95aa660dbca57a84c2fd98bf04f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab18e64062995314d7e14d42871876c46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#ab18e64062995314d7e14d42871876c46">DCM_stopMot</a> (<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id)</td></tr>
+<tr class="separator:ab18e64062995314d7e14d42871876c46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03c48e9492e78788b41be298a77b0e06"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a03c48e9492e78788b41be298a77b0e06">DCM_brakeMot</a> (<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id)</td></tr>
+<tr class="separator:a03c48e9492e78788b41be298a77b0e06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666c122b2934e35c726fd741c62c3a90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a666c122b2934e35c726fd741c62c3a90">DCM_staMot</a> (<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id)</td></tr>
+<tr class="separator:a666c122b2934e35c726fd741c62c3a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e21f7d2278be4a78fdf01ceb4529f87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#a8e21f7d2278be4a78fdf01ceb4529f87">DCM_staMotAll</a> (void)</td></tr>
+<tr class="separator:a8e21f7d2278be4a78fdf01ceb4529f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9d3ecc3ea2b418a874c93df299121b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="hal_8h.html#aaf9d3ecc3ea2b418a874c93df299121b">DCM_setPwmDuty</a> (<a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a> en_id, <a class="el" href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a> us_duty10)</td></tr>
+<tr class="separator:aaf9d3ecc3ea2b418a874c93df299121b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">マクロ定義詳解</h2>
+<a id="a5efddc8727910e22d349281084ad054e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5efddc8727910e22d349281084ad054e">&#9670;&nbsp;</a></span>ENC_L_TCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENC_L_TCNT&#160;&#160;&#160;(MTU8.TCNT)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabb2a00a8eee345feb46fc7842598b0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabb2a00a8eee345feb46fc7842598b0f">&#9670;&nbsp;</a></span>ENC_R_TCNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENC_R_TCNT&#160;&#160;&#160;(MTU7.TCNT)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a828bed975a6f3a24231309200b24cf23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a828bed975a6f3a24231309200b24cf23">&#9670;&nbsp;</a></span>LED8</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED8&#160;&#160;&#160;( PORTD.DR.BYTE )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab245600beef06916bb4d3bb18f6c4d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab245600beef06916bb4d3bb18f6c4d68">&#9670;&nbsp;</a></span>LED8_ALL_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED8_ALL_OFF&#160;&#160;&#160;( 0x00 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae308f3b0841a155922b91f4a24bbcd71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae308f3b0841a155922b91f4a24bbcd71">&#9670;&nbsp;</a></span>LED8_ALL_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED8_ALL_ON&#160;&#160;&#160;( 0xff )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a539e266c323acc28fc6ef89f1acbd390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539e266c323acc28fc6ef89f1acbd390">&#9670;&nbsp;</a></span>LED_BAT0</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_BAT0&#160;&#160;&#160;( PORT5.DR.BIT.B1 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1295835892ab3dd6e4d09c061f655c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1295835892ab3dd6e4d09c061f655c9c">&#9670;&nbsp;</a></span>LED_BAT1</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_BAT1&#160;&#160;&#160;( PORT5.DR.BIT.B2 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a722077d8e8e3dd886449517c187a5921"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a722077d8e8e3dd886449517c187a5921">&#9670;&nbsp;</a></span>LED_DIST_LF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_DIST_LF&#160;&#160;&#160;( PORTE.DR.BIT.B2 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa595aa798ce3c805797e1ee10fbf3e6c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa595aa798ce3c805797e1ee10fbf3e6c">&#9670;&nbsp;</a></span>LED_DIST_LS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_DIST_LS&#160;&#160;&#160;( PORTE.DR.BIT.B3 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0d9b89d2fb1ab5c153057adce43098a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d9b89d2fb1ab5c153057adce43098a0">&#9670;&nbsp;</a></span>LED_DIST_RF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_DIST_RF&#160;&#160;&#160;( PORTE.DR.BIT.B0 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0814715088d47391f95399965485daf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0814715088d47391f95399965485daf">&#9670;&nbsp;</a></span>LED_DIST_RS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_DIST_RS&#160;&#160;&#160;( PORTE.DR.BIT.B1 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb73b4a23aa82c68dd47fc38f80c6e63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb73b4a23aa82c68dd47fc38f80c6e63">&#9670;&nbsp;</a></span>LED_SYS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LED_SYS&#160;&#160;&#160;( PORT3.DR.BIT.B2 )</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfdd27022aa8c85cdcfc498bc69864f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfdd27022aa8c85cdcfc498bc69864f9">&#9670;&nbsp;</a></span>SW_EXE_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SW_EXE_PIN&#160;&#160;&#160;(PORTC.PORT.BIT.B7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2a2674604bcd97d77911de92e2a1834"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2a2674604bcd97d77911de92e2a1834">&#9670;&nbsp;</a></span>SW_INC_PIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SW_INC_PIN&#160;&#160;&#160;(PORTC.PORT.BIT.B6)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acd8900c9ec0efde1da3253b718574067"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8900c9ec0efde1da3253b718574067">&#9670;&nbsp;</a></span>SW_OFF</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SW_OFF&#160;&#160;&#160;(<a class="el" href="typedefine_8h.html#ad76d1750a6cdeebd506bfcd6752554d2">ON</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19d9e3aced311179a2914e0c9b13d0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d9e3aced311179a2914e0c9b13d0f9">&#9670;&nbsp;</a></span>SW_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SW_ON&#160;&#160;&#160;(<a class="el" href="typedefine_8h.html#a29e413f6725b2ba32d165ffaa35b01e5">OFF</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">列挙型詳解</h2>
+<a id="a252d781d04ccc114fbef72757c58dede"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a252d781d04ccc114fbef72757c58dede">&#9670;&nbsp;</a></span>enDCM_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="a252d781d04ccc114fbef72757c58dedeac3e5309c9c0765223d660fe19aeb3fb0"></a>DCM_R&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a252d781d04ccc114fbef72757c58dedea1941a5855b67f8e1b2a9d3b7e4dc30bc"></a>DCM_L&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a252d781d04ccc114fbef72757c58dedea817f43ce8b16038c3479513fd44d9712"></a>DCM_MAX&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af09783dd7d56e2a2f048fa30d74eef54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af09783dd7d56e2a2f048fa30d74eef54">&#9670;&nbsp;</a></span>enDIST_SEN_ID</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">enDIST_SEN_ID</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">列挙値</th></tr><tr><td class="fieldname"><a id="af09783dd7d56e2a2f048fa30d74eef54aa6df6687045990b61b3a461e8b49130a"></a>DIST_SEN_R_FRONT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af09783dd7d56e2a2f048fa30d74eef54a8725234ccfc6d559ea545a90a9b794c6"></a>DIST_SEN_L_FRONT&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af09783dd7d56e2a2f048fa30d74eef54aedb2046cb9ab54ebbfc913b01581e306"></a>DIST_SEN_R_SIDE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af09783dd7d56e2a2f048fa30d74eef54a1240f8bef310dd9d4ba44b74dde593b2"></a>DIST_SEN_L_SIDE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af09783dd7d56e2a2f048fa30d74eef54a7ea1d35735130661faec3e019fba5d1c"></a>DIST_SEN_NUM&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="aad0452fd13906dfb96f4229b365d8cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad0452fd13906dfb96f4229b365d8cec">&#9670;&nbsp;</a></span>BAT_getLv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a> BAT_getLv </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace0bb9cfe126b49cbd303562e989f23a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0bb9cfe126b49cbd303562e989f23a">&#9670;&nbsp;</a></span>BAT_Pol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void BAT_Pol </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1fd4ffe2430f6fa07446cfb8ec7fc0a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fd4ffe2430f6fa07446cfb8ec7fc0a9">&#9670;&nbsp;</a></span>charget()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> unsigned char charget </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0e38c27681091bcd0e70dc8cd463111b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e38c27681091bcd0e70dc8cd463111b">&#9670;&nbsp;</a></span>charput()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void charput </td>
+          <td>(</td>
+          <td class="paramtype">unsigned char&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03c48e9492e78788b41be298a77b0e06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03c48e9492e78788b41be298a77b0e06">&#9670;&nbsp;</a></span>DCM_brakeMot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DCM_brakeMot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a>&#160;</td>
+          <td class="paramname"><em>en_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acda95aa660dbca57a84c2fd98bf04f32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acda95aa660dbca57a84c2fd98bf04f32">&#9670;&nbsp;</a></span>DCM_setDirCcw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DCM_setDirCcw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a>&#160;</td>
+          <td class="paramname"><em>en_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8cd31e116eb971a38305adb9bdb7f5a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cd31e116eb971a38305adb9bdb7f5a8">&#9670;&nbsp;</a></span>DCM_setDirCw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DCM_setDirCw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a>&#160;</td>
+          <td class="paramname"><em>en_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf9d3ecc3ea2b418a874c93df299121b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf9d3ecc3ea2b418a874c93df299121b">&#9670;&nbsp;</a></span>DCM_setPwmDuty()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DCM_setPwmDuty </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a>&#160;</td>
+          <td class="paramname"><em>en_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="typedefine_8h.html#a5850d5316caf7f4cedd742fdf8cd7c02">USHORT</a>&#160;</td>
+          <td class="paramname"><em>us_duty10</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a666c122b2934e35c726fd741c62c3a90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a666c122b2934e35c726fd741c62c3a90">&#9670;&nbsp;</a></span>DCM_staMot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DCM_staMot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a>&#160;</td>
+          <td class="paramname"><em>en_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8e21f7d2278be4a78fdf01ceb4529f87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e21f7d2278be4a78fdf01ceb4529f87">&#9670;&nbsp;</a></span>DCM_staMotAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DCM_staMotAll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab18e64062995314d7e14d42871876c46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab18e64062995314d7e14d42871876c46">&#9670;&nbsp;</a></span>DCM_stopMot()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DCM_stopMot </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal_8h.html#a252d781d04ccc114fbef72757c58dede">enDCM_ID</a>&#160;</td>
+          <td class="paramname"><em>en_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a767b964b7663d7aa815f4ff6f4beb175"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767b964b7663d7aa815f4ff6f4beb175">&#9670;&nbsp;</a></span>DIST_getNowVal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a9909bd3cf05f0906045f2ee85be4eeac">SHORT</a> DIST_getNowVal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="hal_8h.html#af09783dd7d56e2a2f048fa30d74eef54">enDIST_SEN_ID</a>&#160;</td>
+          <td class="paramname"><em>en_id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac182c6a9807124017d604e982542b9f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac182c6a9807124017d604e982542b9f7">&#9670;&nbsp;</a></span>DIST_Pol_Front()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DIST_Pol_Front </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a37d592ec2cd7d2f5dde6f1834fd21194"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d592ec2cd7d2f5dde6f1834fd21194">&#9670;&nbsp;</a></span>DIST_Pol_Side()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void DIST_Pol_Side </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69197de55f9debb6ae7be73c769c90aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69197de55f9debb6ae7be73c769c90aa">&#9670;&nbsp;</a></span>ENC_Clr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void ENC_Clr </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1da7389b9dca4dc21685daf83e20a7cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da7389b9dca4dc21685daf83e20a7cf">&#9670;&nbsp;</a></span>ENC_GetDiv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void ENC_GetDiv </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a> *&#160;</td>
+          <td class="paramname"><em>p_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="typedefine_8h.html#a2a3e0cda5f1249bef6db47c5eb8e3813">LONG</a> *&#160;</td>
+          <td class="paramname"><em>p_l</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7b54da5604d48bda1e0f93a69ca6c010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b54da5604d48bda1e0f93a69ca6c010">&#9670;&nbsp;</a></span>ENC_Sta()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void ENC_Sta </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe846a8e8f1903b254ef262737844021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe846a8e8f1903b254ef262737844021">&#9670;&nbsp;</a></span>ENC_Stop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void ENC_Stop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af24a16c6e925ab102987b895b0a310ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24a16c6e925ab102987b895b0a310ee">&#9670;&nbsp;</a></span>GYRO_getNowAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a> GYRO_getNowAngle </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9bd944f73c6831de36705e53b258748f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9bd944f73c6831de36705e53b258748f">&#9670;&nbsp;</a></span>GYRO_getSpeedErr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> <a class="el" href="typedefine_8h.html#a8d06b04c04132c6f7c0fcb08c6167455">FLOAT</a> GYRO_getSpeedErr </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af0a6a3bde3f31643840d594bd4f9c365"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af0a6a3bde3f31643840d594bd4f9c365">&#9670;&nbsp;</a></span>GYRO_Pol()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void GYRO_Pol </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af37c9b47339174b6bebdee336f4ff081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37c9b47339174b6bebdee336f4ff081">&#9670;&nbsp;</a></span>GYRO_SetRef()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void GYRO_SetRef </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa43e8df89dc000f5f79cd3febef11b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa43e8df89dc000f5f79cd3febef11b09">&#9670;&nbsp;</a></span>HAL_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void HAL_init </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50c1a2214702c5c67ed4597b5085ccbd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50c1a2214702c5c67ed4597b5085ccbd">&#9670;&nbsp;</a></span>SCI_chkRecv()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> int SCI_chkRecv </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d34d773d3056c82bcd43ba248267fab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d34d773d3056c82bcd43ba248267fab">&#9670;&nbsp;</a></span>SCI_getch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> char SCI_getch </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2d9d895a735831a254ea1a18590fbe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2d9d895a735831a254ea1a18590fbe5">&#9670;&nbsp;</a></span>SCI_getch_uc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> unsigned char SCI_getch_uc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adf0624f4b278345ffafa749b7950be59"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf0624f4b278345ffafa749b7950be59">&#9670;&nbsp;</a></span>SCI_gets()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> int SCI_gets </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c0afb452b679fea51dd70d8e9fb4afb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c0afb452b679fea51dd70d8e9fb4afb">&#9670;&nbsp;</a></span>SCI_putch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void SCI_putch </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9039797d94a67dd817a713b1034310c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9039797d94a67dd817a713b1034310c1">&#9670;&nbsp;</a></span>SCI_puts()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void SCI_puts </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a14f97f6843f7c0bf56eda88508f583a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14f97f6843f7c0bf56eda88508f583a9">&#9670;&nbsp;</a></span>SCI_putsL()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="typedefine_8h.html#ad17d551e31d1828c68acf40684849b7e">PUBLIC</a> void SCI_putsL </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>buffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.19
+</small></address>
+</body>
+</html>
